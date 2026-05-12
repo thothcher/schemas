@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Flow Lab · IT Step Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <img src="imgs/logo.png" class="brand-img" alt="IT Step Academy">
+            <div class="brand-text">
+                <div class="brand-name" id="brand-name">Angular Flow Lab</div>
+                <div class="brand-sub" id="brand-sub">IT Step Academy</div>
+            </div>
+        </div>
+        <div class="nav-sep"></div>
+        <div class="level-pill">
+            <strong id="level-num">Level 1</strong>
+            <span class="sep">·</span>
+            <span id="level-title">Get Products</span>
+        </div>
+        <div class="navbar-actions">
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ka">ქარ</button>
+            </div>
+            <div class="levels-dropdown" id="levels-dropdown">
+                <button class="btn btn-secondary" id="levels-toggle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    <span id="lbl-levels">Levels</span>
+                </button>
+                <div class="levels-dropdown-menu" id="levels-menu"></div>
+            </div>
+            <button class="btn btn-ghost" id="reset-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                <span id="lbl-reset">Reset</span>
+            </button>
+            <button class="btn btn-secondary" id="check-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span id="lbl-check">Check Answer</span>
+            </button>
+            <button class="btn btn-primary" id="run-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                <span id="lbl-run">Run Flow</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="app">
+        <aside class="library">
+            <div class="library-header" id="lbl-library">Block Library</div>
+            <div class="library-list" id="library-list"></div>
+        </aside>
+
+        <section class="workspace">
+            <div class="mission-banner">
+                <div class="mission-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <div class="mission-text">
+                    <strong id="lbl-mission">Mission:</strong> <span id="mission-text"></span>
+                </div>
+                <div class="mission-hint" id="mission-hint">Show hint</div>
+            </div>
+
+            <div class="canvas-wrap" id="canvas-wrap">
+                <div class="canvas-stage" id="canvas-stage">
+                    <div class="canvas" id="canvas">
+                        <svg id="connections-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+                        <div id="nodes-container"></div>
+                    </div>
+                </div>
+                <div class="zoom-controls">
+                    <button class="zoom-btn" id="zoom-out" title="Zoom out">−</button>
+                    <button class="zoom-btn zoom-level" id="zoom-level">100%</button>
+                    <button class="zoom-btn" id="zoom-in" title="Zoom in">+</button>
+                </div>
+            </div>
+
+            <div class="explain">
+                <div class="explain-header">
+                    <div class="explain-title" id="lbl-howitworks">How it works</div>
+                    <div class="explain-steps" id="explain-steps"></div>
+                </div>
+                <div class="explain-body" id="explain-body"></div>
+            </div>
+        </section>
+
+        <aside class="inspector">
+            <div class="inspector-header">
+                <div class="inspector-header-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div class="inspector-title-wrap">
+                    <div class="inspector-eyebrow" id="lbl-inspector">Inspector</div>
+                    <div class="inspector-title" id="insp-title">Select a block</div>
+                </div>
+            </div>
+            <div class="inspector-body" id="inspector-body"></div>
+        </aside>
+    </main>
+
+    <div class="toast-wrap" id="toast-wrap"></div>
+
+    <div class="preview-overlay" id="preview-overlay">
+        <div class="preview-window">
+            <div class="preview-chrome">
+                <div class="preview-dots"><span></span><span></span><span></span></div>
+                <div class="preview-url" id="preview-url">https://shop.local/products</div>
+                <button class="preview-close" id="preview-close">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="preview-body" id="preview-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
