@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -NoProfile -Command \"\\(Get-Content app.js | Select-String -Pattern '^\\\\s+title:' | Measure-Object\\).Count\")"
+    ]
+  }
+}

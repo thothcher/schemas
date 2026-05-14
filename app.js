@@ -23,6 +23,7 @@ const ICONS = {
     searchInput: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
     debounce: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
     loginForm: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>',
+    signupForm: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>',
     authService: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
     tokenStore: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
     authGuard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>',
@@ -33,6 +34,7 @@ const ICONS = {
     routeParams: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
     lazyModule: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
     rotate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>',
+    dive: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6"/><path d="M12 9l3 3-3 3"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
     warning: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
     check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
@@ -129,7 +131,24 @@ const T = {
     bannerPaged:  ['Page 1 — 4 items shown of 25.', 'გვერდი 1 — 25-დან 4 ერთეული.'],
     bannerSocket: ['Live updates streaming in.', 'რეალურ დროში განახლება მიდინარეობს.'],
     bannerLazy:   ['Lazy chunk loaded on demand.', 'ლეიზი ჩუნკი ჩაიტვირთა მოთხოვნისას.'],
-    bannerCardPattern:['Reusable Card composed inside the List.', 'მრავალჯერადი Card-ი ჩამატებულია List-ში.']
+    bannerCardPattern:['Reusable Card composed inside the List.', 'მრავალჯერადი Card-ი ჩამატებულია List-ში.'],
+
+    // Dive / sub-canvas
+    dblToFlip:    ['Double-click to flip back', 'ორმაგი დაწკაპუნება უკან გასარიყელად'],
+    diveInto:     ['Dive into', 'შესვლა'],
+    topCrumb:     ['Top', 'მთავარი'],
+    dveTooltip:   ['Open block internals', 'ბლოკის შინაარსის გახსნა'],
+    subLibraryTitle: ['Internals', 'შინაარსი'],
+    apiUrlLabel:  ['URL (leave empty to use mock data)', 'URL (ცარიელის შემთხვევაში გამოიყენება ნიმუში)'],
+    apiUrlHint:   ['Real fetch happens on Run Flow when the chain is correct.', 'რეალური მონაცემები მოვა Run Flow-ზე, თუ ჯაჭვი სწორია.'],
+    livePreview:  ['Live data fetched from your URL', 'მონაცემები ჩამოტვირთულია მითითებული URL-დან'],
+    fetchFailed:  ['Fetch failed — showing mock data', 'მოთხოვნა ვერ მოხერხდა — ნაჩვენებია ნიმუში'],
+    examplesTitle:['Reference Schemas', 'მზა სქემები'],
+    loadEditable: ['Load to canvas (edit)', 'ჩატვირთვა (რედაქტირება)'],
+    readonlyHint: ['Read-only preview — load it to edit.', 'მხოლოდ საჩვენებლად — ჩატვირთე რომ შეცვალო.'],
+    subMissingMsg:['Dive into the {block} block and complete its internals.', 'შედი {block} ბლოკში და დაასრულე მისი შინაარსი.'],
+    snapOn:       ['Snap to grid: on', 'ბადეზე მიწებება: ჩართულია'],
+    snapOff:      ['Snap to grid: off', 'ბადეზე მიწებება: გამორთულია']
 };
 
 let lang = 'en';
@@ -495,6 +514,18 @@ const NODE_DEFS = {
         mistake: ['Forgetting to close the socket on logout — wastes server resources.',
                   'logout-ისას სოკეტის დახურვის დავიწყება — სერვერის რესურსი იხარჯება ფუჭად.']
     },
+    signupForm: {
+        label: ['Signup Form', 'რეგისტრაციის ფორმა'],
+        category: ['Forms', 'ფორმები'],
+        color: '',
+        short: ['Email + password + confirm', 'ელფოსტა + პაროლი + დადასტურება'],
+        long: ['A signup form collects credentials for a new user account. It hands the values to an Auth Service which then POSTs them to the API — usually sharing the same service as the login form.',
+               'რეგისტრაციის ფორმა ქმნის ახალ მომხმარებელს. იგი გადასცემს მნიშვნელობებს Auth Service-ს, რომელიც POST-ით აგზავნის API-ში — როგორც წესი იგივე სერვისით, რომელსაც login იყენებს.'],
+        file: 'signup.component.ts',
+        code: '<span class="k">onSubmit</span>() {\n  <span class="k">this</span>.auth.signup(<span class="k">this</span>.form.value)\n    .subscribe(t =&gt; <span class="k">this</span>.token.save(t));\n}',
+        mistake: ['Creating a separate AuthService just for signup — share one service so login and signup stay in sync.',
+                  'ცალკე AuthService-ის შექმნა მხოლოდ რეგისტრაციისთვის — ერთი სერვისი უნდა გამოიყენო ორივესთვის.']
+    },
     lazyModule: {
         label: ['Lazy Module', 'Lazy მოდული'],
         category: ['Routing', 'მარშრუტიზაცია'],
@@ -506,7 +537,77 @@ const NODE_DEFS = {
         code: '{\n  path: <span class="s">\'admin\'</span>,\n  loadComponent: () =&gt;\n    <span class="k">import</span>(<span class="s">\'./admin/admin.component\'</span>)\n      .then(m =&gt; m.AdminComponent)\n}',
         mistake: ['Eagerly importing rarely-used features into AppModule — bloats the initial download.',
                   'იშვიათად საჭირო ფიჩერების უპირობოდ ჩატვირთვა AppModule-ში — bundle ხდება დიდი.']
-    }
+    },
+
+    // ----- Sub-blocks (used inside the Dive sub-canvas) -----
+    'sub.constructor': { sub: true, label: ['constructor', 'constructor'], category: ['Internals', 'შინაარსი'], color: '', short: ['Inject dependencies', 'დამოკიდებულებების ინჯექცია'], long: ['Runs once on instantiation. Inject services here; do not put heavy work in the constructor — use ngOnInit.', 'მუშაობს ერთხელ. ინჯექცია აქ; სამუშაო ლოგიკა — ngOnInit-ში.'], file: 'class member', code: '<span class="k">constructor</span>(<span class="k">private</span> http: HttpClient) {}', mistake: ['Calling APIs inside the constructor — use ngOnInit.', 'API-ის გამოძახება constructor-ში — გამოიყენე ngOnInit.'] },
+    'sub.ngOnInit': { sub: true, label: ['ngOnInit', 'ngOnInit'], category: ['Lifecycle', 'სასიცოცხლო ციკლი'], color: 'c-info', short: ['Init lifecycle hook', 'ინიციალიზაცია'], long: ['Called once after Angular has set up inputs. Best place to start API calls and subscriptions.', 'გამოიძახება ერთხელ Input-ების დაყენების შემდეგ. იდეალური ადგილი API-ისთვის.'], file: 'OnInit', code: '<span class="k">ngOnInit</span>() {\n  <span class="k">this</span>.load();\n}', mistake: ['Doing work in the constructor instead — Angular inputs may not be ready yet.', 'სამუშაოს გაკეთება constructor-ში — input-ები მზად შეიძლება არ იყოს.'] },
+    'sub.httpClient': { sub: true, label: ['HttpClient', 'HttpClient'], category: ['Internals', 'შინაარსი'], color: '', short: ['Angular HTTP utility', 'Angular HTTP'], long: ['The underlying HTTP utility your service wraps. It returns Observables of typed responses.', 'HTTP უტილიტა, რომელსაც სერვისი იყენებს. აბრუნებს Observable-ს.'], file: '@angular/common/http', code: '<span class="k">this</span>.http.get&lt;T&gt;(url)', mistake: ['Using fetch() directly — you lose interceptors, retries and the typed pipeline.', 'fetch-ის გამოყენება — დაკარგავ interceptor-ებს.'] },
+    'sub.signal': { sub: true, label: ['Signal', 'Signal'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-success', short: ['Reactive value', 'რეაქტიული მნიშვნელობა'], long: ['A signal is a reactive primitive. Read it as a function; update with .set / .update. Angular tracks reads and re-renders when it changes.', 'Signal არის რეაქტიული პრიმიტივი. წაიკითხე როგორც ფუნქცია; განაახლე .set / .update.'], file: '@angular/core', code: 'products = <span class="k">signal</span>&lt;Product[]&gt;([]);', mistake: ['Treating signal() as a static value — always invoke it.', 'signal()-ის სტატიკურ მნიშვნელობად მოპყრობა.'] },
+    'sub.observable': { sub: true, label: ['Observable', 'Observable'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-info', short: ['rxjs stream', 'rxjs ნაკადი'], long: ['An RxJS Observable. Lazy — does nothing until subscribed. Pipe operators to transform.', 'RxJS Observable. სანამ subscribe არ მოხდება, არაფერი ხდება.'], file: 'rxjs', code: 'products$ = <span class="k">this</span>.http.get&lt;Product[]&gt;(url);', mistake: ['Forgetting to subscribe — nothing happens.', 'subscribe-ის დავიწყება.'] },
+    'sub.subject': { sub: true, label: ['Subject', 'Subject'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-info', short: ['Multicast emitter', 'მრავალარხიანი emitter'], long: ['A Subject is both an Observable and an Observer. Use it to push values to many subscribers.', 'Subject არის Observable და Observer ერთად. გამოიყენე მრავალი subscriber-ისთვის.'], file: 'rxjs', code: 'changes$ = <span class="k">new</span> Subject&lt;Product&gt;();', mistake: ['Using a plain Subject when a BehaviorSubject is needed for the latest value.', 'Subject-ის გამოყენება BehaviorSubject-ის ნაცვლად.'] },
+    'sub.directive': { sub: true, label: ['Directive', 'დირექტივა'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template attribute', 'შაბლონის ატრიბუტი'], long: ['A directive attaches behavior to an element via an attribute. Structural directives (*ngIf, *ngFor) change DOM; attribute directives change appearance.', 'დირექტივა ანიჭებს ქცევას ელემენტს ატრიბუტით.'], file: 'directive.ts', code: '<span class="k">@Directive</span>({ selector: <span class="s">\'[appHilite]\'</span> })', mistake: ['Putting two structural directives on one element — split into multiple.', 'ორი სტრუქტურული დირექტივა ერთ ელემენტზე.'] },
+    'sub.pipe': { sub: true, label: ['Pipe', 'Pipe'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template transform', 'შაბლონის ტრანსფორმაცია'], long: ['A pipe transforms a value inside a template, e.g. {{ price | currency }}.', 'Pipe ცვლის მნიშვნელობას შაბლონში.'], file: 'pipe.ts', code: '{{ price | <span class="k">currency</span> }}', mistake: ['Doing heavy work in a pure pipe — it runs on every change detection.', 'მძიმე სამუშაო pure pipe-ში.'] },
+    'sub.loader': { sub: true, label: ['Loader / Spinner', 'ჩატვირთვა'], category: ['UX', 'UX'], color: 'c-info', short: ['Show while pending', 'ნახე ჩატვირთვისას'], long: ['A spinner shown while the response is pending. Bind to a loading boolean or use the async pipe with a loading template.', 'ხატულა მონაცემთა მოლოდინში.'], file: 'template', code: '@if (loading()) { &lt;app-spinner /&gt; }', mistake: ['Never hiding the loader on error — UI stays stuck.', 'spinner-ის დატოვება შეცდომისას.'] },
+    'sub.errorState': { sub: true, label: ['Error State', 'შეცდომის მდგომარეობა'], category: ['UX', 'UX'], color: 'c-error', short: ['Render on failure', 'ნახე შეცდომისას'], long: ['Show an error message and a retry button when the request fails. Store the error in a signal or stream.', 'შეცდომის შეტყობინება და retry ღილაკი.'], file: 'template', code: '@if (error()) { &lt;p&gt;{{ error() }}&lt;/p&gt; }', mistake: ['Swallowing the error silently.', 'შეცდომის ჩუმად გადაყლაპვა.'] },
+    'sub.guardCheck': { sub: true, label: ['canActivate check', 'canActivate-ის შემოწმება'], category: ['Internals', 'შინაარსი'], color: '', short: ['Allow / block route', 'ნება / აკრძალვა'], long: ['Returns true (allow) or a UrlTree (redirect). Reads from the Token Store.', 'აბრუნებს true ან UrlTree-ს.'], file: 'auth.guard.ts', code: '<span class="k">return</span> token ? <span class="k">true</span> : router.parseUrl(<span class="s">\'/login\'</span>);', mistake: ['Returning false with no redirect — user is stuck.', 'false-ის დაბრუნება redirect-ის გარეშე.'] },
+    'sub.routeRedirect': { sub: true, label: ['Redirect to /login', 'გადასვლა /login-ზე'], category: ['Internals', 'შინაარსი'], color: 'c-warning', short: ['Send user to login', 'მომხმარებლის გადამისამართება'], long: ['When the guard denies access, return a UrlTree that points at /login to send the user there.', 'როცა guard აკრძალავს, აბრუნე UrlTree /login-ზე.'], file: 'auth.guard.ts', code: '<span class="k">return</span> router.parseUrl(<span class="s">\'/login\'</span>);', mistake: ['Hard-coding window.location — bypasses Angular router.', 'window.location-ის გამოყენება.'] },
+    'sub.formControl': { sub: true, label: ['FormControl', 'FormControl'], category: ['Internals', 'შინაარსი'], color: '', short: ['Single input model', 'ერთი ველის მოდელი'], long: ['Represents a single field with value, validity and dirty state. Combine in a FormGroup.', 'ერთი ველი მნიშვნელობით, ვალიდურობით.'], file: '@angular/forms', code: 'email = <span class="k">new</span> FormControl(<span class="s">\'\'</span>, [Validators.required])', mistake: ['Skipping validators — invalid data sneaks in.', 'ვალიდატორების გამოტოვება.'] },
+    'sub.validator': { sub: true, label: ['Validator', 'ვალიდატორი'], category: ['Internals', 'შინაარსი'], color: 'c-warning', short: ['Block bad input', 'არასწორი მონაცემის ბლოკი'], long: ['Built-in (Validators.required, .email) or custom functions returning null for valid input or an error map otherwise.', 'ჩაშენებული ან მორგებული ვალიდატორი.'], file: '@angular/forms', code: 'Validators.email', mistake: ['Validating only client-side — always validate on the server too.', 'მხოლოდ კლიენტზე ვალიდაცია.'] },
+    'sub.submitHandler': { sub: true, label: ['onSubmit', 'onSubmit'], category: ['Internals', 'შინაარსი'], color: '', short: ['Form submit method', 'submit მეთოდი'], long: ['Reads the form value and hands it off to the service. Disable the button while pending.', 'წაიკითხავს ფორმის მნიშვნელობას და გადასცემს სერვისს.'], file: 'component.ts', code: '<span class="k">onSubmit</span>() { <span class="k">this</span>.auth.login(<span class="k">this</span>.form.value); }', mistake: ['Submitting an invalid form — check form.valid first.', 'არავალიდური ფორმის გაგზავნა.'] },
+    'sub.routeHandler': { sub: true, label: ['Route handler', 'მისამართის ხელჯოხი'], category: ['Server', 'სერვერი'], color: 'c-info', short: ['Server-side endpoint', 'სერვერის წერტილი'], long: ['The function on the server that responds to a specific HTTP path + method.', 'სერვერის ფუნქცია, რომელიც პასუხობს კონკრეტულ მისამართს.'], file: 'server', code: 'app.get(<span class="s">\'/api/products\'</span>, handler)', mistake: ['Not returning JSON.', 'JSON-ის დაუბრუნებლობა.'] },
+    'sub.dbQuery': { sub: true, label: ['DB query', 'DB query'], category: ['Server', 'სერვერი'], color: '', short: ['SELECT / FIND', 'SELECT / FIND'], long: ['The SQL or ORM call that reads or writes the database row(s).', 'SQL ან ORM გამოძახება.'], file: 'server', code: 'db.query(<span class="s">\'SELECT * FROM products\'</span>)', mistake: ['Building SQL by string concatenation — open to injection.', 'SQL-ის სტრინგის შერწყმა — injection-ის რისკი.'] },
+    'sub.tokenRead': { sub: true, label: ['Read token', 'ტოკენის წაკითხვა'], category: ['Internals', 'შინაარსი'], color: '', short: ['localStorage.getItem', 'localStorage.getItem'], long: ['Reads the saved auth token. Returns null if absent or expired.', 'წაიკითხავს შენახულ ტოკენს.'], file: 'token-store.ts', code: 'localStorage.getItem(<span class="s">\'token\'</span>)', mistake: ['Reading on every keystroke — cache the value.', 'ყოველ კლავიატურის დარტყმაზე წაკითხვა.'] },
+    'sub.tokenWrite': { sub: true, label: ['Save token', 'ტოკენის შენახვა'], category: ['Internals', 'შინაარსი'], color: 'c-success', short: ['localStorage.setItem', 'localStorage.setItem'], long: ['Persists the auth token after login. Clear on logout.', 'შეინახავს ტოკენს login-ის შემდეგ.'], file: 'token-store.ts', code: 'localStorage.setItem(<span class="s">\'token\'</span>, t)', mistake: ['Forgetting to clear on logout.', 'logout-ზე გაწმენდის დავიწყება.'] }
+};
+
+// ============================================================
+// SUB-CANVAS: maps a parent block type to its internal toolset
+// ============================================================
+const SUB_TOOLS = {
+    service:      ['sub.constructor', 'sub.httpClient', 'sub.observable', 'sub.signal', 'sub.errorState'],
+    componentTs:  ['sub.constructor', 'sub.ngOnInit', 'sub.signal', 'sub.observable', 'sub.loader', 'sub.errorState'],
+    componentHtml:['sub.directive', 'sub.pipe', 'sub.loader', 'sub.errorState'],
+    listTs:       ['sub.constructor', 'sub.ngOnInit', 'sub.signal', 'sub.observable'],
+    listHtml:     ['sub.directive', 'sub.pipe'],
+    cardTs:       ['sub.constructor', 'sub.signal'],
+    cardHtml:     ['sub.directive', 'sub.pipe'],
+    appHtml:      ['sub.directive'],
+    api:          ['sub.routeHandler', 'sub.validator', 'sub.dbQuery'],
+    authGuard:    ['sub.guardCheck', 'sub.tokenRead', 'sub.routeRedirect'],
+    authService:  ['sub.constructor', 'sub.httpClient', 'sub.observable', 'sub.tokenWrite', 'sub.signal'],
+    loginForm:    ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
+    signupForm:   ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
+    reactiveForm: ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
+    searchInput:  ['sub.formControl', 'sub.subject'],
+    interceptor:  ['sub.tokenRead'],
+    debounce:     ['sub.subject', 'sub.observable'],
+    asyncState:   ['sub.signal', 'sub.loader', 'sub.errorState'],
+    paginate:     ['sub.formControl', 'sub.signal'],
+    webSocket:    ['sub.subject', 'sub.observable'],
+    routeParams:  ['sub.observable'],
+    lazyModule:   ['sub.routeHandler'],
+    tokenStore:   ['sub.tokenRead', 'sub.tokenWrite'],
+    router:       ['sub.routeHandler', 'sub.routeRedirect'],
+    pipe:         ['sub.pipe'],
+    database:     ['sub.dbQuery'],
+    get:          ['sub.httpClient'],
+    post:         ['sub.httpClient'],
+    put:          ['sub.httpClient'],
+    delete:       ['sub.httpClient'],
+    browser:      ['sub.directive', 'sub.pipe']
+};
+
+// Default sub-canvas seed per parent type — a small representative arrangement
+const SUB_SEED = {
+    service:      { nodes: [{type: 'sub.constructor', x: 200, y: 250}, {type: 'sub.httpClient', x: 500, y: 250}, {type: 'sub.observable', x: 800, y: 250}], connections: [[0,1],[1,2]] },
+    componentTs:  { nodes: [{type: 'sub.constructor', x: 200, y: 220}, {type: 'sub.ngOnInit', x: 500, y: 220}, {type: 'sub.signal', x: 800, y: 220}], connections: [[0,1],[1,2]] },
+    componentHtml:{ nodes: [{type: 'sub.directive', x: 250, y: 250}, {type: 'sub.pipe', x: 550, y: 250}], connections: [[0,1]] },
+    authService:  { nodes: [{type: 'sub.constructor', x: 200, y: 240}, {type: 'sub.httpClient', x: 480, y: 240}, {type: 'sub.tokenWrite', x: 760, y: 240}], connections: [[0,1],[1,2]] },
+    loginForm:    { nodes: [{type: 'sub.formControl', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
+    signupForm:   { nodes: [{type: 'sub.formControl', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
+    api:          { nodes: [{type: 'sub.routeHandler', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.dbQuery', x: 800, y: 240}], connections: [[0,1],[1,2]] },
+    authGuard:    { nodes: [{type: 'sub.tokenRead', x: 200, y: 240}, {type: 'sub.guardCheck', x: 500, y: 240}, {type: 'sub.routeRedirect', x: 800, y: 240}], connections: [[0,1],[1,2]] }
 };
 
 // ============================================================
@@ -517,7 +618,7 @@ const LIBRARY_GROUPS = [
     { title: 'grpHttp',       items: ['get', 'post', 'put', 'delete'] },
     { title: 'grpAngular',    items: ['service', 'componentTs', 'componentHtml', 'pipe', 'interceptor'] },
     { title: 'grpComponents', items: ['listTs', 'listHtml', 'cardTs', 'cardHtml', 'appHtml'] },
-    { title: 'grpForms',      items: ['reactiveForm', 'loginForm', 'searchInput'] },
+    { title: 'grpForms',      items: ['reactiveForm', 'loginForm', 'signupForm', 'searchInput'] },
     { title: 'grpAuth',       items: ['authService', 'tokenStore', 'authGuard'] },
     { title: 'grpRouting',    items: ['router', 'routeParams', 'lazyModule'] },
     { title: 'grpAdvanced',   items: ['debounce', 'asyncState', 'paginate', 'webSocket'] },
@@ -639,11 +740,15 @@ const LEVELS = [
     },
     {
         title:   ['Loading & Error States', 'ჩატვირთვა და შეცდომა'],
-        mission: ['Show a spinner while loading and an error message if the fetch fails. Only render the list when the data arrives.',
-                  'აჩვენე ხატულა მონაცემთა ჩატვირთვისას და შეცდომა — წარუმატებლობისას. სია გამოაჩინე მხოლოდ წარმატებისას.'],
-        hint:    ['Database → API → GET → Service → Async State → Component (.ts) → Component (.html) → Browser.',
-                  'Database → API → GET → Service → Async State → Component (.ts) → Component (.html) → Browser.'],
+        mission: ['Show a spinner while loading and an error message if the fetch fails. Only render the list when the data arrives. Dive into Component (.ts) and add a Loader and an Error State inside it.',
+                  'აჩვენე ხატულა მონაცემთა ჩატვირთვისას და შეცდომა — წარუმატებლობისას. შედი Component (.ts)-ში და დაამატე Loader და Error State.'],
+        hint:    ['Database → API → GET → Service → Async State → Component (.ts) → Component (.html) → Browser. Then dive into Component (.ts) and add sub.loader + sub.errorState.',
+                  'Database → API → GET → Service → Async State → Component (.ts) → Component (.html) → Browser. შემდეგ შედი Component (.ts)-ში და დაამატე loader + errorState.'],
         expected: ['database', 'api', 'get', 'service', 'asyncState', 'componentTs', 'componentHtml', 'browser'],
+        subSeeds: {
+            componentTs: { nodes: [{type: 'sub.constructor', x: 200, y: 240}, {type: 'sub.ngOnInit', x: 500, y: 240}], connections: [[0,1]] }
+        },
+        subRequired: { componentTs: ['sub.loader', 'sub.errorState'] },
         outcome: 'loaded'
     },
     {
@@ -681,6 +786,25 @@ const LEVELS = [
                   'RouterOutlet → Lazy Module → Component (.ts) → Service → GET → API → Database → Browser.'],
         expected: ['router', 'lazyModule', 'componentTs', 'service', 'get', 'api', 'database', 'browser'],
         outcome: 'lazy'
+    },
+    {
+        title:   ['Shared Auth Service (Login + Signup)', 'საერთო Auth სერვისი (Login + Signup)'],
+        mission: ['One AuthService handles BOTH Login and Signup. Wire both forms into the same service, then POST credentials to the API and save the token. This is a graph — connections can fan in and out.',
+                  'ერთი AuthService უმკლავდება ორივეს — Login-სა და Signup-ს. შეაერთე ორივე ფორმა იმავე სერვისზე, შემდეგ POST API-ში და ტოკენის შენახვა. ეს არის გრაფი — კავშირები იყოფა.'],
+        hint:    ['Login Form → Auth Service, Signup Form → Auth Service, Auth Service → POST → API → Database, Auth Service → Token Store.',
+                  'Login Form → Auth Service, Signup Form → Auth Service, Auth Service → POST → API → Database, Auth Service → Token Store.'],
+        expectedGraph: {
+            nodes: ['loginForm', 'signupForm', 'authService', 'post', 'api', 'database', 'tokenStore'],
+            edges: [
+                ['loginForm', 'authService'],
+                ['signupForm', 'authService'],
+                ['authService', 'post'],
+                ['post', 'api'],
+                ['api', 'database'],
+                ['authService', 'tokenStore']
+            ]
+        },
+        outcome: 'logged'
     }
 ];
 
@@ -696,7 +820,15 @@ const state = {
     nextConnId: 1,
     completed: new Set(),
     running: false,
-    zoom: 1
+    zoom: 1,
+    theme: 'light',
+    spacePressed: false,
+    panning: false,
+    canvasStack: [],
+    readonly: false,
+    snapToGrid: false,
+    undoStack: [],
+    redoStack: []
 };
 
 const NODE_W = 220;
@@ -796,6 +928,32 @@ function setZoom(z, anchor) {
 // ============================================================
 function renderLibrary() {
     libraryListEl.innerHTML = '';
+    const header = $('lbl-library');
+    const inSub = state.canvasStack.length > 0;
+    if (inSub) {
+        const parentType = state.canvasStack[state.canvasStack.length - 1].ownerNodeType;
+        if (header) header.textContent = tt('subLibraryTitle') + ' · ' + tx(NODE_DEFS[parentType].label);
+        const items = SUB_TOOLS[parentType] || [];
+        const sec = document.createElement('div');
+        sec.className = 'library-section';
+        sec.innerHTML = `<div class="library-section-title">${tx(NODE_DEFS[parentType].label)}</div>`;
+        items.forEach(type => {
+            const def = NODE_DEFS[type];
+            if (!def) return;
+            const item = document.createElement('div');
+            item.className = 'lib-item';
+            item.dataset.type = type;
+            item.innerHTML = `
+                <div class="lib-icon ${def.color || ''}">${subIconFor(type)}</div>
+                <div class="lib-label">${tx(def.label)}</div>
+            `;
+            item.addEventListener('mousedown', (e) => startLibraryDrag(type, e));
+            sec.appendChild(item);
+        });
+        libraryListEl.appendChild(sec);
+        return;
+    }
+    if (header) header.textContent = tt('library');
     LIBRARY_GROUPS.forEach(group => {
         const sec = document.createElement('div');
         sec.className = 'library-section';
@@ -814,6 +972,177 @@ function renderLibrary() {
         });
         libraryListEl.appendChild(sec);
     });
+}
+
+// Pick a representative icon for sub-blocks — many share semantics with main blocks
+function subIconFor(type) {
+    const map = {
+        'sub.constructor': ICONS.service,
+        'sub.ngOnInit': ICONS.componentTs,
+        'sub.httpClient': ICONS.api,
+        'sub.signal': ICONS.debounce,
+        'sub.observable': ICONS.debounce,
+        'sub.subject': ICONS.debounce,
+        'sub.directive': ICONS.appHtml,
+        'sub.pipe': ICONS.pipe,
+        'sub.loader': ICONS.asyncState,
+        'sub.errorState': ICONS.warning,
+        'sub.guardCheck': ICONS.authGuard,
+        'sub.routeRedirect': ICONS.router,
+        'sub.formControl': ICONS.reactiveForm,
+        'sub.validator': ICONS.check,
+        'sub.submitHandler': ICONS.loginForm,
+        'sub.routeHandler': ICONS.api,
+        'sub.dbQuery': ICONS.database,
+        'sub.tokenRead': ICONS.tokenStore,
+        'sub.tokenWrite': ICONS.tokenStore
+    };
+    return map[type] || ICONS.componentTs;
+}
+
+function renderBreadcrumb() {
+    const el = $('breadcrumb');
+    if (!el) return;
+    if (!state.canvasStack.length) {
+        el.classList.remove('show');
+        el.innerHTML = '';
+        return;
+    }
+    const ownerType = state.canvasStack[state.canvasStack.length - 1].ownerNodeType;
+    el.innerHTML = `
+        <span class="crumb" id="crumb-top">${tt('topCrumb')}</span>
+        <span class="sep">›</span>
+        <span class="crumb current">${tx(NODE_DEFS[ownerType].label)}</span>
+    `;
+    el.classList.add('show');
+    $('crumb-top').addEventListener('click', surface);
+}
+
+// ============================================================
+// SUB-CANVAS (Dive into) — 1 level deep
+// ============================================================
+function openSubCanvas(node) {
+    if (state.canvasStack.length) return; // 1-level cap
+    if (state.running) return;
+    if (!SUB_TOOLS[node.type]) return;     // nothing meaningful to dive into
+
+    // Snapshot the top-level canvas
+    const snapshot = {
+        nodes: state.nodes,
+        connections: state.connections,
+        nextNodeId: state.nextNodeId,
+        nextConnId: state.nextConnId,
+        selectedNodeId: state.selectedNodeId,
+        zoom: state.zoom,
+        scrollLeft: canvasWrapEl.scrollLeft,
+        scrollTop: canvasWrapEl.scrollTop
+    };
+    state.canvasStack.push({ ownerNodeId: node.id, ownerNodeType: node.type, snapshot });
+
+    // Lazy-create or seed the child canvas
+    if (!node.children) {
+        node.children = { nodes: [], connections: [], nextNodeId: 1, nextConnId: 1 };
+        const lvl = LEVELS[state.currentLevel];
+        const levelSeed = lvl && lvl.subSeeds && lvl.subSeeds[node.type];
+        const seed = levelSeed === null ? null : (levelSeed || SUB_SEED[node.type]);
+        if (seed) {
+            seed.nodes.forEach((sn) => {
+                node.children.nodes.push({
+                    id: 'n' + node.children.nextNodeId++,
+                    type: sn.type, x: sn.x, y: sn.y, flipped: false
+                });
+            });
+            (seed.connections || []).forEach(([fromIdx, toIdx]) => {
+                const a = node.children.nodes[fromIdx];
+                const b = node.children.nodes[toIdx];
+                if (!a || !b) return;
+                node.children.connections.push({
+                    id: 'c' + node.children.nextConnId++,
+                    from: a.id, to: b.id
+                });
+            });
+        }
+    }
+
+    // Animate library out, swap, animate back in
+    const rotator = $('library-rotator');
+    if (rotator) {
+        rotator.classList.add('rotate-out');
+        setTimeout(() => {
+            // Swap state to children
+            state.nodes = node.children.nodes;
+            state.connections = node.children.connections;
+            state.nextNodeId = node.children.nextNodeId;
+            state.nextConnId = node.children.nextConnId;
+            state.selectedNodeId = null;
+            renderLibrary();
+            renderAll();
+            renderBreadcrumb();
+            renderExplainSteps();
+            // Reset scroll/zoom for the sub-canvas
+            canvasWrapEl.scrollLeft = 0;
+            canvasWrapEl.scrollTop = 0;
+            rotator.classList.remove('rotate-out');
+        }, 200);
+    } else {
+        // No rotator — swap synchronously
+        state.nodes = node.children.nodes;
+        state.connections = node.children.connections;
+        state.nextNodeId = node.children.nextNodeId;
+        state.nextConnId = node.children.nextConnId;
+        state.selectedNodeId = null;
+        renderLibrary();
+        renderAll();
+        renderBreadcrumb();
+    }
+}
+
+function surface() {
+    if (!state.canvasStack.length) return;
+    if (state.running) return;
+    const frame = state.canvasStack[state.canvasStack.length - 1];
+    const ownerNodeId = frame.ownerNodeId;
+    const snapshot = frame.snapshot;
+
+    // Persist any edits made in the sub-canvas back onto the owner node
+    // (we're working on the same arrays — but capture the counters)
+    const owner = snapshot.nodes.find(n => n.id === ownerNodeId);
+    if (owner && owner.children) {
+        owner.children.nodes = state.nodes;
+        owner.children.connections = state.connections;
+        owner.children.nextNodeId = state.nextNodeId;
+        owner.children.nextConnId = state.nextConnId;
+    }
+
+    state.canvasStack.pop();
+
+    const rotator = $('library-rotator');
+    if (rotator) {
+        rotator.classList.add('rotate-out');
+        setTimeout(() => {
+            state.nodes = snapshot.nodes;
+            state.connections = snapshot.connections;
+            state.nextNodeId = snapshot.nextNodeId;
+            state.nextConnId = snapshot.nextConnId;
+            state.selectedNodeId = snapshot.selectedNodeId;
+            renderLibrary();
+            renderAll();
+            renderBreadcrumb();
+            renderExplainSteps();
+            canvasWrapEl.scrollLeft = snapshot.scrollLeft;
+            canvasWrapEl.scrollTop = snapshot.scrollTop;
+            rotator.classList.remove('rotate-out');
+        }, 200);
+    } else {
+        state.nodes = snapshot.nodes;
+        state.connections = snapshot.connections;
+        state.nextNodeId = snapshot.nextNodeId;
+        state.nextConnId = snapshot.nextConnId;
+        state.selectedNodeId = snapshot.selectedNodeId;
+        renderLibrary();
+        renderAll();
+        renderBreadcrumb();
+    }
 }
 
 function renderLevelsMenu() {
@@ -862,6 +1191,7 @@ function renderNodes() {
         const hasIn = state.connections.some(c => c.to === node.id);
         const hasOut = state.connections.some(c => c.from === node.id);
 
+        const canDive = !state.canvasStack.length;
         el.innerHTML = `
             <div class="node-inner">
                 <div class="node-face node-front">
@@ -869,7 +1199,7 @@ function renderNodes() {
                         <div class="node-icon ${def.color || ''}">${ICONS[node.type] || ICONS.componentTs}</div>
                         <div class="node-title">${tx(def.label)}</div>
                         <div class="node-actions">
-                            <button class="node-btn flip-btn" title="Flip">${ICONS.rotate}</button>
+                            ${canDive ? `<button class="node-btn dive-btn" title="Dive in">${ICONS.dive}</button>` : ''}
                             <button class="node-btn delete" title="Delete">${ICONS.close}</button>
                         </div>
                     </div>
@@ -881,15 +1211,18 @@ function renderNodes() {
                 <div class="node-face node-back">
                     <div class="node-back-title">${tx(def.label)}</div>
                     <div class="node-back-text">${tx(def.long)}</div>
-                    <div style="display:flex; justify-content:flex-end; margin-top:6px;">
-                        <button class="node-btn flip-btn">${ICONS.rotate}</button>
-                    </div>
+                    <div class="node-back-hint">${tt('dblToFlip')}</div>
                 </div>
             </div>
         `;
 
         el.addEventListener('mousedown', (e) => onNodeMouseDown(e, node));
         el.addEventListener('click', (e) => onNodeClick(e, node));
+        el.addEventListener('dblclick', (e) => {
+            if (e.target.closest('.port, .node-btn')) return;
+            e.preventDefault();
+            flipNode(node.id);
+        });
         nodesContainer.appendChild(el);
     });
 }
@@ -933,7 +1266,15 @@ function renderInspector() {
     }
     const def = NODE_DEFS[node.type];
     inspectorTitle.textContent = tx(def.label);
+    const apiSection = node.type === 'api' ? `
+        <div class="insp-section">
+            <div class="insp-section-label">${tt('apiUrlLabel')}</div>
+            <input class="insp-input" id="insp-api-url" placeholder="https://fakestoreapi.com/products" value="${(node.apiUrl || '').replace(/"/g, '&quot;')}">
+            <div class="insp-hint">${tt('apiUrlHint')}</div>
+        </div>
+    ` : '';
     inspectorBody.innerHTML = `
+        ${apiSection}
         <div class="insp-section">
             <div class="insp-section-label">${tt('whatDoes')}</div>
             <div class="insp-text">${tx(def.long)}</div>
@@ -954,11 +1295,22 @@ function renderInspector() {
             </div>
         </div>
     `;
+    if (node.type === 'api') {
+        const inp = $('insp-api-url');
+        if (inp) {
+            inp.addEventListener('input', (e) => { node.apiUrl = e.target.value; });
+            // Stop dragging / hotkeys from intercepting input
+            inp.addEventListener('mousedown', (e) => e.stopPropagation());
+            inp.addEventListener('keydown', (e) => e.stopPropagation());
+        }
+    }
 }
 
 function renderExplainSteps() {
     explainStepsEl.innerHTML = '';
-    const expected = LEVELS[state.currentLevel].expected;
+    if (state.canvasStack.length) return; // sub-canvas — no top-level dots
+    const lvl = LEVELS[state.currentLevel];
+    const expected = lvl.expected || (lvl.expectedGraph && lvl.expectedGraph.nodes) || [];
     expected.forEach(() => {
         const dot = document.createElement('div');
         dot.className = 'explain-dot';
@@ -1009,7 +1361,56 @@ function renderAll() {
 // ============================================================
 // NODE OPS
 // ============================================================
+function pushUndo() {
+    state.undoStack.push({
+        nodes: deepCloneNodes(state.nodes),
+        connections: state.connections.map(c => ({ ...c }))
+    });
+    if (state.undoStack.length > 50) state.undoStack.shift();
+    state.redoStack.length = 0;
+}
+function deepCloneNodes(nodes) {
+    return nodes.map(n => {
+        const copy = { ...n };
+        if (n.children) {
+            copy.children = {
+                nodes: deepCloneNodes(n.children.nodes),
+                connections: n.children.connections.map(c => ({ ...c })),
+                nextNodeId: n.children.nextNodeId,
+                nextConnId: n.children.nextConnId
+            };
+        }
+        return copy;
+    });
+}
+function applySnapshot(snap) {
+    state.nodes = snap.nodes;
+    state.connections = snap.connections;
+    state.selectedNodeId = null;
+    renderAll();
+}
+function undo() {
+    if (!state.undoStack.length) return;
+    const cur = {
+        nodes: deepCloneNodes(state.nodes),
+        connections: state.connections.map(c => ({ ...c }))
+    };
+    state.redoStack.push(cur);
+    applySnapshot(state.undoStack.pop());
+}
+function redo() {
+    if (!state.redoStack.length) return;
+    const cur = {
+        nodes: deepCloneNodes(state.nodes),
+        connections: state.connections.map(c => ({ ...c }))
+    };
+    state.undoStack.push(cur);
+    applySnapshot(state.redoStack.pop());
+}
+
 function addNode(type, x, y) {
+    if (state.readonly) return null;
+    pushUndo();
     const node = {
         id: 'n' + state.nextNodeId++,
         type,
@@ -1017,26 +1418,40 @@ function addNode(type, x, y) {
         y: Math.max(10, y - NODE_H / 2),
         flipped: false
     };
+    if (type === 'api') node.apiUrl = '';
     state.nodes.push(node);
     renderAll();
     return node;
 }
 function removeNode(id) {
+    if (state.readonly) return;
+    pushUndo();
     state.nodes = state.nodes.filter(n => n.id !== id);
     state.connections = state.connections.filter(c => c.from !== id && c.to !== id);
     if (state.selectedNodeId === id) state.selectedNodeId = null;
     renderAll();
 }
 function addConnection(fromId, toId) {
+    if (state.readonly) return;
     if (fromId === toId) return;
     if (state.connections.some(c => c.from === fromId && c.to === toId)) return;
-    state.connections = state.connections.filter(c => !(c.from === fromId));
-    state.connections = state.connections.filter(c => !(c.to === toId));
+    pushUndo();
+    const lvl = LEVELS[state.currentLevel];
+    const inSub = state.canvasStack.length > 0;
+    const allowGraph = inSub || (lvl && lvl.expectedGraph);
+    if (!allowGraph) {
+        // Linear-only top-level levels: strip any prior edge sharing the same source
+        // or target so the user's flow always remains a single chain.
+        state.connections = state.connections.filter(c => !(c.from === fromId));
+        state.connections = state.connections.filter(c => !(c.to === toId));
+    }
     state.connections.push({ id: 'c' + state.nextConnId++, from: fromId, to: toId });
     renderConnections();
     renderNodes();
 }
 function removeConnection(id) {
+    if (state.readonly) return;
+    pushUndo();
     state.connections = state.connections.filter(c => c.id !== id);
     renderConnections();
     renderNodes();
@@ -1052,6 +1467,7 @@ function flipNode(id) {
 // INTERACTIONS
 // ============================================================
 function startLibraryDrag(type, e) {
+    if (state.readonly) return;
     e.preventDefault();
     const def = NODE_DEFS[type];
     const ghost = document.createElement('div');
@@ -1078,9 +1494,12 @@ function startLibraryDrag(type, e) {
 }
 
 function onNodeMouseDown(e, node) {
-    if (e.target.closest('.flip-btn')) {
+    if (state.readonly) {
+        if (e.target.closest('.node-btn.delete, .dive-btn')) return;
+    }
+    if (e.target.closest('.dive-btn')) {
         e.stopPropagation();
-        flipNode(node.id);
+        openSubCanvas(node);
         return;
     }
     if (e.target.closest('.node-btn.delete')) {
@@ -1088,6 +1507,7 @@ function onNodeMouseDown(e, node) {
         removeNode(node.id);
         return;
     }
+    if (state.readonly) return;
     if (e.target.classList.contains('port')) {
         e.stopPropagation();
         startConnectionDrag(node, e.target.dataset.port, e);
@@ -1100,15 +1520,19 @@ function onNodeMouseDown(e, node) {
     const origY = node.y;
     const el = e.currentTarget;
     el.classList.add('dragging');
+    let moved = false;
+    const snap = (v) => state.snapToGrid ? Math.round(v / 20) * 20 : v;
     const onMove = (ev) => {
-        node.x = Math.max(0, origX + (ev.clientX - startX) / state.zoom);
-        node.y = Math.max(0, origY + (ev.clientY - startY) / state.zoom);
+        node.x = Math.max(0, snap(origX + (ev.clientX - startX) / state.zoom));
+        node.y = Math.max(0, snap(origY + (ev.clientY - startY) / state.zoom));
         el.style.left = node.x + 'px';
         el.style.top = node.y + 'px';
+        moved = true;
         renderConnections();
     };
     const onUp = () => {
         el.classList.remove('dragging');
+        if (moved && (node.x !== origX || node.y !== origY)) pushUndo();
         document.removeEventListener('mousemove', onMove);
         document.removeEventListener('mouseup', onUp);
     };
@@ -1117,13 +1541,14 @@ function onNodeMouseDown(e, node) {
 }
 
 function onNodeClick(e, node) {
-    if (e.target.closest('.flip-btn') || e.target.closest('.node-btn.delete') || e.target.classList.contains('port')) return;
+    if (e.target.closest('.dive-btn') || e.target.closest('.node-btn.delete') || e.target.classList.contains('port')) return;
     state.selectedNodeId = node.id;
     renderNodes();
     renderInspector();
 }
 
 function startConnectionDrag(node, portType, e) {
+    if (state.readonly) return;
     e.preventDefault();
     const isOutgoing = portType === 'out';
     const sp = portPos(node, portType);
@@ -1202,9 +1627,72 @@ function topologicalChain() {
     return order;
 }
 
+// Generalized graph analyzer (Kahn's algorithm). Returns topological order
+// even when the shape has fan-in / fan-out, so multi-parent flows can be
+// validated and animated. `topologicalChain` above stays linear-only so the
+// 17 existing levels keep their exact validation behavior.
+function flowGraph() {
+    const nodes = state.nodes;
+    const conns = state.connections;
+    const indeg = new Map(nodes.map(n => [n.id, 0]));
+    const outdeg = new Map(nodes.map(n => [n.id, 0]));
+    const adj = new Map(nodes.map(n => [n.id, []]));
+    conns.forEach(c => {
+        indeg.set(c.to, (indeg.get(c.to) || 0) + 1);
+        outdeg.set(c.from, (outdeg.get(c.from) || 0) + 1);
+        adj.get(c.from).push(c.to);
+    });
+    const starts = nodes.filter(n => indeg.get(n.id) === 0).map(n => n.id);
+    const ends = nodes.filter(n => outdeg.get(n.id) === 0).map(n => n.id);
+    const remaining = new Map(indeg);
+    const queue = [...starts];
+    const order = [];
+    while (queue.length) {
+        const id = queue.shift();
+        order.push(id);
+        for (const next of adj.get(id) || []) {
+            remaining.set(next, remaining.get(next) - 1);
+            if (remaining.get(next) === 0) queue.push(next);
+        }
+    }
+    const acyclic = order.length === nodes.length;
+    const isLinear = acyclic
+        && starts.length <= 1
+        && [...outdeg.values()].every(v => v <= 1)
+        && [...indeg.values()].every(v => v <= 1);
+    return { order, isLinear, acyclic, starts, ends, indeg, outdeg };
+}
+
+// Validates sub-canvas contents per LEVELS[i].subRequired.
+// Returns null on success, otherwise a friendly message describing the gap.
+function checkSubAnswers(lvl) {
+    if (!lvl.subRequired) return null;
+    // Operate on top-level nodes regardless of whether the user is dived in
+    const topNodes = state.canvasStack.length
+        ? state.canvasStack[0].snapshot.nodes
+        : state.nodes;
+    for (const [parentType, expectedTypes] of Object.entries(lvl.subRequired)) {
+        const node = topNodes.find(n => n.type === parentType);
+        if (!node) continue;
+        const sub = node.children;
+        const presentTypes = sub ? sub.nodes.map(n => n.type) : [];
+        const missing = expectedTypes.filter(t => !presentTypes.includes(t));
+        if (missing.length) {
+            const blockLabel = tx(NODE_DEFS[parentType].label);
+            return tt('subMissingMsg').replace('{block}', blockLabel)
+                + ' (' + missing.map(t => tx(NODE_DEFS[t].label)).join(', ') + ')';
+        }
+    }
+    return null;
+}
+
 function checkAnswer() {
+    const lvl = LEVELS[state.currentLevel];
+    if (lvl.expectedGraph) {
+        return checkAnswerGraph(lvl.expectedGraph);
+    }
     const order = topologicalChain();
-    const expected = LEVELS[state.currentLevel].expected;
+    const expected = lvl.expected;
     if (!order || order.length === 0) {
         showToast(tt('emptyFlow'), tt('emptyFlowMsg'), 'warning');
         return;
@@ -1216,6 +1704,12 @@ function checkAnswer() {
     const types = order.map(id => state.nodes.find(n => n.id === id).type);
     const matches = types.length === expected.length && types.every((t, i) => t === expected[i]);
     if (matches) {
+        const subProblem = checkSubAnswers(lvl);
+        if (subProblem) {
+            showToast(tt('notQuite'), subProblem, 'warning');
+            appendLog(subProblem, 'warning');
+            return;
+        }
         state.completed.add(state.currentLevel);
         showToast(tt('correct'), tt('correctMsg'), 'success');
         appendLog(tt('answerOk'), 'success');
@@ -1237,15 +1731,89 @@ function checkAnswer() {
     }
 }
 
+function multisetEqual(a, b) {
+    if (a.length !== b.length) return false;
+    const counts = new Map();
+    for (const x of a) counts.set(x, (counts.get(x) || 0) + 1);
+    for (const x of b) {
+        if (!counts.has(x)) return false;
+        const n = counts.get(x) - 1;
+        if (n < 0) return false;
+        counts.set(x, n);
+    }
+    return [...counts.values()].every(v => v === 0);
+}
+
+function checkAnswerGraph(expectedGraph) {
+    if (!state.nodes.length) {
+        showToast(tt('emptyFlow'), tt('emptyFlowMsg'), 'warning');
+        return;
+    }
+    const types = state.nodes.map(n => n.type);
+    if (!multisetEqual(types, expectedGraph.nodes)) {
+        const missing = expectedGraph.nodes.filter(t => !types.includes(t));
+        const extra = types.filter(t => !expectedGraph.nodes.includes(t));
+        let msg;
+        if (missing.length) {
+            msg = `${tt('expectedWord')} <strong>${tx(NODE_DEFS[missing[0]].label)}</strong>.`;
+        } else if (extra.length) {
+            msg = `${tt('extraAfter')} — <strong>${tx(NODE_DEFS[extra[0]].label)}</strong>.`;
+        } else {
+            msg = tt('notQuite');
+        }
+        showToast(tt('notQuite'), msg, 'error');
+        appendLog(msg, 'error');
+        return;
+    }
+    // Map id → type for edge translation
+    const typeOf = new Map(state.nodes.map(n => [n.id, n.type]));
+    const userEdges = state.connections.map(c => typeOf.get(c.from) + '→' + typeOf.get(c.to));
+    const expectedEdges = expectedGraph.edges.map(([a, b]) => a + '→' + b);
+    if (!multisetEqual(userEdges, expectedEdges)) {
+        const missing = expectedEdges.filter(e => !userEdges.includes(e));
+        let msg;
+        if (missing.length) {
+            const [a, b] = missing[0].split('→');
+            msg = `${tt('expectedWord')} <strong>${tx(NODE_DEFS[a].label)}</strong> → <strong>${tx(NODE_DEFS[b].label)}</strong>.`;
+        } else {
+            msg = tt('notQuite');
+        }
+        showToast(tt('notQuite'), msg, 'error');
+        appendLog(msg, 'error');
+        return;
+    }
+    // Sanity: graph should be acyclic (Kahn's algo proves this)
+    const fg = flowGraph();
+    if (!fg.acyclic) {
+        showToast(tt('notQuite'), tt('notQuite'), 'error');
+        return;
+    }
+    state.completed.add(state.currentLevel);
+    showToast(tt('correct'), tt('correctMsg'), 'success');
+    appendLog(tt('answerOk'), 'success');
+    renderLevelsMenu();
+}
+
 // ============================================================
 // RUN FLOW
 // ============================================================
 async function runFlow() {
     if (state.running) return;
-    const order = topologicalChain();
-    if (!order || order.length < 2) {
-        showToast(tt('nothingRun'), tt('nothingRunMsg'), 'warning');
-        return;
+    const lvl = LEVELS[state.currentLevel];
+    let order;
+    if (lvl.expectedGraph) {
+        const fg = flowGraph();
+        if (!fg.acyclic || fg.order.length < 2) {
+            showToast(tt('nothingRun'), tt('nothingRunMsg'), 'warning');
+            return;
+        }
+        order = fg.order;
+    } else {
+        order = topologicalChain();
+        if (!order || order.length < 2) {
+            showToast(tt('nothingRun'), tt('nothingRunMsg'), 'warning');
+            return;
+        }
     }
     state.running = true;
     Array.from(nodesContainer.querySelectorAll('.node')).forEach(el => el.classList.remove('firing'));
@@ -1258,20 +1826,44 @@ async function runFlow() {
     logForNode(state.nodes.find(n => n.id === order[0]).type, 0);
     await sleep(450);
 
-    for (let i = 0; i < order.length - 1; i++) {
-        await animateParticle(order[i], order[i + 1]);
-        const el = nodesContainer.querySelector(`.node[data-id="${order[i + 1]}"]`);
-        if (el) el.classList.add('firing');
-        markStep(i + 1);
-        const node = state.nodes.find(n => n.id === order[i + 1]);
-        logForNode(node.type, i + 1);
-        await sleep(260);
+    if (lvl.expectedGraph) {
+        // Walk every edge in topological order — handles fan-in / fan-out
+        const orderIdx = new Map(order.map((id, i) => [id, i]));
+        const visited = new Set([order[0]]);
+        let step = 1;
+        for (const id of order) {
+            const outs = state.connections.filter(c => c.from === id);
+            outs.sort((a, b) => orderIdx.get(a.to) - orderIdx.get(b.to));
+            for (const conn of outs) {
+                await animateParticle(conn.from, conn.to);
+                if (!visited.has(conn.to)) {
+                    visited.add(conn.to);
+                    const el = nodesContainer.querySelector(`.node[data-id="${conn.to}"]`);
+                    if (el) el.classList.add('firing');
+                    markStep(step++);
+                    const node = state.nodes.find(n => n.id === conn.to);
+                    logForNode(node.type, step - 1);
+                    await sleep(180);
+                }
+            }
+        }
+    } else {
+        for (let i = 0; i < order.length - 1; i++) {
+            await animateParticle(order[i], order[i + 1]);
+            const el = nodesContainer.querySelector(`.node[data-id="${order[i + 1]}"]`);
+            if (el) el.classList.add('firing');
+            markStep(i + 1);
+            const node = state.nodes.find(n => n.id === order[i + 1]);
+            logForNode(node.type, i + 1);
+            await sleep(260);
+        }
     }
 
     const lastNode = state.nodes.find(n => n.id === order[order.length - 1]);
     if (lastNode && lastNode.type === 'browser') {
         await sleep(120);
-        showBrowserPreview();
+        const apiNode = order.map(id => state.nodes.find(n => n.id === id)).find(n => n && n.type === 'api');
+        await showBrowserPreview({ apiUrl: apiNode && apiNode.apiUrl });
     } else {
         appendLog(tt('flowComplete'), 'success');
     }
@@ -1387,7 +1979,70 @@ const SEARCH_RESULTS = [
     { name: 'Laptop Stand',   price: 45,   inStock: true }
 ];
 
-function showBrowserPreview() {
+async function showBrowserPreview(opts) {
+    const apiUrl = (opts && opts.apiUrl) || '';
+    // Live fetch path
+    if (apiUrl && /^https?:\/\//i.test(apiUrl)) {
+        try {
+            const res = await fetch(apiUrl, { headers: { 'Accept': 'application/json' } });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const json = await res.json();
+            renderLivePreview(apiUrl, json);
+            appendLog(tt('livePreview'), 'success');
+            return;
+        } catch (err) {
+            appendLog(tt('fetchFailed') + ' (' + err.message + ')', 'warning');
+            // fall through to canned outcome
+        }
+    }
+    showBrowserPreviewMock();
+}
+
+function renderLivePreview(url, data) {
+    $('preview-url').textContent = url;
+    let bodyHtml = '';
+    const items = Array.isArray(data) ? data : (data && Array.isArray(data.products) ? data.products : null);
+    if (items && items.length && typeof items[0] === 'object') {
+        const cards = items.slice(0, 20).map(p => {
+            const name = p.name || p.title || p.label || p.id || '(item)';
+            const priceRaw = p.price ?? p.cost ?? p.amount;
+            const price = priceRaw == null ? '' : (typeof priceRaw === 'number' ? '$' + priceRaw : String(priceRaw));
+            const stock = (p.inStock ?? p.available ?? p.stock);
+            const stockHtml = stock === undefined
+                ? ''
+                : `<span class="product-stock ${stock ? '' : 'out'}">${stock ? tt('inStock') : tt('outOfStock')}</span>`;
+            return `<div class="product-card">
+                <div class="product-name">${escapeHtml(String(name))}</div>
+                <div class="product-meta">
+                    <span class="product-price">${escapeHtml(price)}</span>
+                    ${stockHtml}
+                </div>
+            </div>`;
+        }).join('');
+        previewBody.innerHTML = `
+            <h1 class="preview-title">${tt('ourProducts')}</h1>
+            <div class="preview-sub">${items.length} ${tt('items')} — ${tt('livePreview')}</div>
+            <div class="preview-banner info">${tt('livePreview')}</div>
+            <div class="preview-grid">${cards}</div>
+        `;
+    } else {
+        // Generic JSON dump
+        const pretty = escapeHtml(JSON.stringify(data, null, 2));
+        previewBody.innerHTML = `
+            <h1 class="preview-title">${tt('ourProducts')}</h1>
+            <div class="preview-sub">${tt('livePreview')}</div>
+            <div class="preview-banner info">${tt('livePreview')}</div>
+            <pre style="background:var(--gray-100); padding:12px; border-radius:6px; max-height:340px; overflow:auto; font-family:var(--mono); font-size:11.5px; color:var(--gray-900);">${pretty}</pre>
+        `;
+    }
+    previewOverlay.classList.add('show');
+}
+
+function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function showBrowserPreviewMock() {
     const lvl = LEVELS[state.currentLevel];
     let list = SAMPLE_PRODUCTS;
     let banner = '';
@@ -1497,10 +2152,17 @@ function showToast(title, body, kind = 'info') {
 // LEVEL MANAGEMENT
 // ============================================================
 function loadLevel(idx) {
+    // Discard any open sub-canvas without animation
+    state.canvasStack = [];
+    exitExampleReadonly();
+    renderBreadcrumb();
+    renderLibrary();
     state.currentLevel = idx;
     state.nodes = [];
     state.connections = [];
     state.selectedNodeId = null;
+    state.nextNodeId = 1;
+    state.nextConnId = 1;
     renderHeader();
     renderExplainSteps();
     renderEmptyExplain();
@@ -1508,13 +2170,211 @@ function loadLevel(idx) {
     renderAll();
 }
 function resetCanvas() {
+    if (state.canvasStack.length) {
+        // Reset just the active sub-canvas
+        if (state.nodes.length === 0 && state.connections.length === 0) return;
+        state.nodes = [];
+        state.connections = [];
+        state.selectedNodeId = null;
+        state.nextNodeId = 1;
+        state.nextConnId = 1;
+        renderAll();
+        return;
+    }
     if (state.nodes.length === 0 && state.connections.length === 0) return;
     state.nodes = [];
     state.connections = [];
     state.selectedNodeId = null;
+    state.nextNodeId = 1;
+    state.nextConnId = 1;
     renderExplainSteps();
     explainBodyEl.innerHTML = `<div class="explain-empty">${tt('canvasCleared')}</div>`;
     renderAll();
+}
+
+// ============================================================
+// REFERENCE SCHEMAS (20 pre-built examples, easy → hard)
+// ============================================================
+// Each entry: { id, title, difficulty (1-5), description, nodes, connections }
+// nodes: [{type, x, y}]   connections: [[fromIdx, toIdx]]
+const EXAMPLES = [
+    { id:'fetch',     diff:1, title:['Hello fetch','პირველი fetch'],
+      desc:['Database → API → GET → Service → Component → Browser','ბაზიდან ბრაუზერამდე'],
+      nodes:[{type:'database',x:120,y:280},{type:'api',x:380,y:280},{type:'get',x:640,y:280},{type:'service',x:900,y:280},{type:'componentTs',x:1160,y:280},{type:'componentHtml',x:1420,y:280},{type:'browser',x:1680,y:280}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]] },
+    { id:'filter',    diff:1, title:['Filter with Pipe','ფილტრი Pipe-ით'],
+      desc:['Add a pipe between component logic and template','ფილტრის Pipe-ის ჩამატება'],
+      nodes:[{type:'database',x:120,y:280},{type:'api',x:360,y:280},{type:'get',x:600,y:280},{type:'service',x:840,y:280},{type:'componentTs',x:1080,y:280},{type:'pipe',x:1320,y:280},{type:'componentHtml',x:1560,y:280},{type:'browser',x:1800,y:280}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] },
+    { id:'post',      diff:1, title:['Create with POST','შექმნა POST-ით'],
+      desc:['Component → Service → POST → API → Database','კომპონენტიდან ბაზამდე POST-ით'],
+      nodes:[{type:'componentTs',x:160,y:300},{type:'service',x:440,y:300},{type:'post',x:720,y:300},{type:'api',x:1000,y:300},{type:'database',x:1280,y:300}],
+      connections:[[0,1],[1,2],[2,3],[3,4]] },
+    { id:'put',       diff:1, title:['Update with PUT','განახლება PUT-ით'],
+      desc:['Component → Service → PUT → API → Database','კომპონენტიდან ბაზამდე PUT-ით'],
+      nodes:[{type:'componentTs',x:160,y:300},{type:'service',x:440,y:300},{type:'put',x:720,y:300},{type:'api',x:1000,y:300},{type:'database',x:1280,y:300}],
+      connections:[[0,1],[1,2],[2,3],[3,4]] },
+    { id:'router',    diff:2, title:['Router outlet','Router'],
+      desc:['URL /products mounts a component that fetches data','URL → კომპონენტი → მონაცემები'],
+      nodes:[{type:'router',x:140,y:300},{type:'componentTs',x:420,y:300},{type:'service',x:700,y:300},{type:'get',x:980,y:300},{type:'api',x:1260,y:300},{type:'database',x:1540,y:300}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5]] },
+    { id:'detail',    diff:2, title:['Detail page :id','დეტალური /:id'],
+      desc:['Read :id and fetch one item','აიღე ერთი ერთეული :id-ით'],
+      nodes:[{type:'router',x:120,y:280},{type:'routeParams',x:380,y:280},{type:'componentTs',x:640,y:280},{type:'service',x:900,y:280},{type:'get',x:1160,y:280},{type:'api',x:1420,y:280},{type:'database',x:1680,y:280},{type:'componentHtml',x:1680,y:460},{type:'browser',x:1420,y:460}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]] },
+    { id:'card',      diff:2, title:['List + Card pattern','List + Card'],
+      desc:['Parent fetches, Card renders each item via @Input','მშობელი იღებს, Card ხატავს'],
+      nodes:[{type:'database',x:120,y:300},{type:'api',x:340,y:300},{type:'get',x:560,y:300},{type:'service',x:780,y:300},{type:'listTs',x:1000,y:300},{type:'cardTs',x:1220,y:300},{type:'cardHtml',x:1440,y:300},{type:'listHtml',x:1660,y:300},{type:'appHtml',x:1660,y:480},{type:'browser',x:1440,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]] },
+    { id:'search',    diff:3, title:['Search with debounce','ძიება debounce-ით'],
+      desc:['Wait 300ms between keystrokes before calling','დაიცადე 300მწმ კლავიატურის დარტყმებს შორის'],
+      nodes:[{type:'searchInput',x:120,y:300},{type:'componentTs',x:380,y:300},{type:'debounce',x:640,y:300},{type:'service',x:900,y:300},{type:'get',x:1160,y:300},{type:'api',x:1420,y:300},{type:'database',x:1680,y:300},{type:'componentHtml',x:1680,y:480},{type:'browser',x:1420,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]] },
+    { id:'paginate',  diff:3, title:['Pagination','პაგინაცია'],
+      desc:['One page at a time','ერთი გვერდი ერთდროულად'],
+      nodes:[{type:'paginate',x:120,y:300},{type:'componentTs',x:400,y:300},{type:'service',x:680,y:300},{type:'get',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300},{type:'componentHtml',x:1520,y:480},{type:'browser',x:1240,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] },
+    { id:'login',     diff:3, title:['Login + Save token','Login + ტოკენი'],
+      desc:['Submit credentials, store token','კრედენციალები + ტოკენი'],
+      nodes:[{type:'loginForm',x:120,y:300},{type:'componentTs',x:380,y:300},{type:'authService',x:640,y:300},{type:'post',x:900,y:300},{type:'api',x:1160,y:300},{type:'database',x:1420,y:300},{type:'tokenStore',x:1420,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]] },
+    { id:'authShare', diff:4, title:['Login + Signup share Auth','Login + Signup ერთად'],
+      desc:['Both forms feed one AuthService (graph)','ორი ფორმა — ერთი სერვისი'],
+      nodes:[{type:'loginForm',x:120,y:180},{type:'signupForm',x:120,y:380},{type:'authService',x:480,y:280},{type:'post',x:780,y:280},{type:'api',x:1080,y:280},{type:'database',x:1380,y:280},{type:'tokenStore',x:780,y:480}],
+      connections:[[0,2],[1,2],[2,3],[3,4],[4,5],[2,6]] },
+    { id:'guard',     diff:3, title:['Auth guard protect','Auth Guard'],
+      desc:['Block /dashboard unless token is valid','დაიცავი /dashboard'],
+      nodes:[{type:'router',x:120,y:300},{type:'authGuard',x:380,y:300},{type:'tokenStore',x:640,y:300},{type:'componentTs',x:900,y:300},{type:'service',x:1160,y:300},{type:'get',x:1420,y:300},{type:'api',x:1680,y:300},{type:'database',x:1940,y:300},{type:'browser',x:1940,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]] },
+    { id:'intercept', diff:4, title:['HTTP Interceptor','Interceptor'],
+      desc:['Auto-attach Authorization token','ავტომატური Authorization'],
+      nodes:[{type:'componentTs',x:120,y:300},{type:'service',x:400,y:300},{type:'interceptor',x:680,y:300},{type:'get',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300},{type:'tokenStore',x:680,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[6,2]] },
+    { id:'lazy',      diff:4, title:['Lazy-loaded module','Lazy მოდული'],
+      desc:['/admin loads only when visited','/admin ჩატვირთვა მოთხოვნისას'],
+      nodes:[{type:'router',x:120,y:300},{type:'lazyModule',x:380,y:300},{type:'componentTs',x:640,y:300},{type:'service',x:900,y:300},{type:'get',x:1160,y:300},{type:'api',x:1420,y:300},{type:'database',x:1680,y:300},{type:'browser',x:1680,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] },
+    { id:'reactive',  diff:3, title:['Reactive form submit','რეაქტიული ფორმა'],
+      desc:['Validated reactive form → POST','ვალიდირებული ფორმა'],
+      nodes:[{type:'reactiveForm',x:120,y:300},{type:'componentTs',x:400,y:300},{type:'service',x:680,y:300},{type:'post',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5]] },
+    { id:'loading',   diff:4, title:['Loading / Error UX','Loading / Error'],
+      desc:['Spinner + error + retry','სპინერი + შეცდომა'],
+      nodes:[{type:'database',x:120,y:300},{type:'api',x:380,y:300},{type:'get',x:640,y:300},{type:'service',x:900,y:300},{type:'asyncState',x:1160,y:300},{type:'componentTs',x:1420,y:300},{type:'componentHtml',x:1680,y:300},{type:'browser',x:1680,y:480}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] },
+    { id:'socket',    diff:4, title:['WebSocket live updates','WebSocket რეალურ დროში'],
+      desc:['Stream changes straight to component','ნაკადი კომპონენტისკენ'],
+      nodes:[{type:'database',x:120,y:300},{type:'webSocket',x:400,y:300},{type:'service',x:680,y:300},{type:'componentTs',x:960,y:300},{type:'componentHtml',x:1240,y:300},{type:'browser',x:1520,y:300}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5]] },
+    { id:'searchPage',diff:5, title:['Search + Pagination','ძიება + პაგინაცია'],
+      desc:['Two controls feed one component','ორი კონტროლი ერთ კომპონენტს'],
+      nodes:[{type:'searchInput',x:120,y:180},{type:'paginate',x:120,y:380},{type:'debounce',x:420,y:180},{type:'componentTs',x:720,y:280},{type:'service',x:1000,y:280},{type:'get',x:1280,y:280},{type:'api',x:1560,y:280},{type:'database',x:1840,y:280},{type:'componentHtml',x:1840,y:480},{type:'browser',x:1560,y:480}],
+      connections:[[0,2],[2,3],[1,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]] },
+    { id:'logout',    diff:2, title:['Logout flow','Logout-ი'],
+      desc:['Clear token, route to login','ტოკენი + redirect'],
+      nodes:[{type:'componentTs',x:120,y:300},{type:'authService',x:420,y:300},{type:'tokenStore',x:720,y:300},{type:'router',x:1020,y:300}],
+      connections:[[0,1],[1,2],[2,3]] },
+    { id:'roleGuard', diff:5, title:['Role-based guard','როლზე დაფუძნებული Guard'],
+      desc:['Admin vs user route protection','ადმინი vs მომხმარებელი'],
+      nodes:[{type:'router',x:120,y:280},{type:'authGuard',x:380,y:280},{type:'tokenStore',x:640,y:280},{type:'componentTs',x:900,y:280},{type:'service',x:1160,y:280},{type:'get',x:1420,y:280},{type:'api',x:1680,y:280},{type:'database',x:1940,y:280},{type:'componentHtml',x:1940,y:460},{type:'browser',x:1680,y:460}],
+      connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]] }
+];
+
+function renderExamples() {
+    const body = $('examples-body');
+    if (!body) return;
+    body.innerHTML = '';
+    EXAMPLES.forEach((ex) => {
+        const card = document.createElement('div');
+        card.className = 'example-card';
+        const stars = Array.from({length: 5}, (_, i) =>
+            `<span class="star ${i < ex.diff ? '' : 'dim'}">★</span>`
+        ).join('');
+        card.innerHTML = `
+            <div class="example-thumb">${makeExampleThumb(ex)}</div>
+            <div class="example-title">${tx(ex.title)}</div>
+            <div class="example-diff">${stars}</div>
+            <div class="example-desc">${tx(ex.desc)}</div>
+        `;
+        card.addEventListener('click', () => loadExample(ex, true));
+        body.appendChild(card);
+    });
+}
+
+function makeExampleThumb(ex) {
+    // Tiny SVG thumbnail: dots-and-lines representation
+    const xs = ex.nodes.map(n => n.x);
+    const ys = ex.nodes.map(n => n.y);
+    const minX = Math.min(...xs), maxX = Math.max(...xs);
+    const minY = Math.min(...ys), maxY = Math.max(...ys);
+    const w = maxX - minX + 220, h = maxY - minY + 110;
+    const pad = 20;
+    const sx = (x) => ((x - minX + 20) / w) * (240 - 2 * pad) + pad;
+    const sy = (y) => ((y - minY + 20) / h) * (100 - 2 * pad) + pad;
+    const dots = ex.nodes.map(n =>
+        `<circle cx="${sx(n.x)}" cy="${sy(n.y)}" r="3" fill="var(--brand)"/>`).join('');
+    const lines = ex.connections.map(([a, b]) => {
+        const A = ex.nodes[a], B = ex.nodes[b];
+        return `<line x1="${sx(A.x)}" y1="${sy(A.y)}" x2="${sx(B.x)}" y2="${sy(B.y)}" stroke="var(--gray-400)" stroke-width="1"/>`;
+    }).join('');
+    return `<svg viewBox="0 0 240 100" preserveAspectRatio="xMidYMid meet">${lines}${dots}</svg>`;
+}
+
+let _currentExample = null;
+function loadExample(ex, readonly) {
+    _currentExample = ex;
+    // Surface from any sub-canvas first (no animation)
+    state.canvasStack = [];
+    renderBreadcrumb();
+    renderLibrary();
+    // Replace canvas content
+    state.nodes = [];
+    state.connections = [];
+    state.nextNodeId = 1;
+    state.nextConnId = 1;
+    state.selectedNodeId = null;
+    const idMap = [];
+    ex.nodes.forEach((n) => {
+        const node = {
+            id: 'n' + state.nextNodeId++,
+            type: n.type, x: n.x, y: n.y, flipped: false
+        };
+        if (n.type === 'api') node.apiUrl = '';
+        state.nodes.push(node);
+        idMap.push(node.id);
+    });
+    ex.connections.forEach(([a, b]) => {
+        state.connections.push({
+            id: 'c' + state.nextConnId++,
+            from: idMap[a], to: idMap[b]
+        });
+    });
+    state.readonly = !!readonly;
+    renderAll();
+    $('examples-overlay').classList.remove('show');
+    const banner = $('example-readonly-banner');
+    if (banner) banner.classList.toggle('show', !!readonly);
+}
+
+function exitExampleReadonly() {
+    state.readonly = false;
+    const banner = $('example-readonly-banner');
+    if (banner) banner.classList.remove('show');
+}
+
+// ============================================================
+// THEME
+// ============================================================
+function setTheme(theme) {
+    state.theme = theme === 'dark' ? 'dark' : 'light';
+    if (state.theme === 'dark') document.documentElement.classList.add('dark');
+    else document.documentElement.classList.remove('dark');
+    try { localStorage.setItem('afl-theme', state.theme); } catch (_) {}
+}
+function loadTheme() {
+    let saved = 'light';
+    try { saved = localStorage.getItem('afl-theme') || 'light'; } catch (_) {}
+    setTheme(saved);
 }
 
 // ============================================================
@@ -1559,10 +2419,37 @@ document.querySelectorAll('.lang-btn').forEach(b => {
     b.addEventListener('click', () => setLanguage(b.dataset.lang));
 });
 
+$('theme-toggle').addEventListener('click', () => {
+    setTheme(state.theme === 'dark' ? 'light' : 'dark');
+});
+
+const examplesOverlay = $('examples-overlay');
+$('examples-toggle').addEventListener('click', () => {
+    renderExamples();
+    examplesOverlay.classList.add('show');
+});
+$('examples-close').addEventListener('click', () => examplesOverlay.classList.remove('show'));
+examplesOverlay.addEventListener('click', (e) => {
+    if (e.target === examplesOverlay) examplesOverlay.classList.remove('show');
+});
+$('example-load-editable').addEventListener('click', () => {
+    if (_currentExample) loadExample(_currentExample, false);
+    exitExampleReadonly();
+});
+
 // Zoom buttons
 $('zoom-in').addEventListener('click', () => setZoom(state.zoom + 0.1));
 $('zoom-out').addEventListener('click', () => setZoom(state.zoom - 0.1));
 $('zoom-level').addEventListener('click', () => setZoom(1));
+
+// Snap-to-grid + Undo/Redo
+$('snap-toggle').addEventListener('click', () => {
+    state.snapToGrid = !state.snapToGrid;
+    $('snap-toggle').classList.toggle('active', state.snapToGrid);
+    showToast('', state.snapToGrid ? tt('snapOn') : tt('snapOff'), 'info');
+});
+$('undo-btn').addEventListener('click', undo);
+$('redo-btn').addEventListener('click', redo);
 
 // Keyboard
 document.addEventListener('keydown', (e) => {
@@ -1581,6 +2468,16 @@ document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === '0') {
         e.preventDefault();
         setZoom(1);
+        return;
+    }
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'z' || e.key === 'Z')) {
+        e.preventDefault();
+        if (!inField) undo();
+        return;
+    }
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'z' || e.key === 'Z' || e.key === 'y' || e.key === 'Y')) {
+        e.preventDefault();
+        if (!inField) redo();
         return;
     }
     if ((e.key === 'Delete' || e.key === 'Backspace') && state.selectedNodeId && !inField) {
@@ -1604,6 +2501,60 @@ canvasWrapEl.addEventListener('wheel', (e) => {
 }, { passive: false });
 
 // ============================================================
+// PAN (Space + drag, or middle-mouse drag)
+// ============================================================
+function inFormField(target) {
+    return target && target.matches && target.matches('input, textarea, [contenteditable]');
+}
+
+window.addEventListener('keydown', (e) => {
+    if (e.code !== 'Space') return;
+    if (inFormField(e.target)) return;
+    if (state.spacePressed) return;
+    state.spacePressed = true;
+    canvasWrapEl.classList.add('pan-ready');
+    e.preventDefault();
+});
+window.addEventListener('keyup', (e) => {
+    if (e.code !== 'Space') return;
+    state.spacePressed = false;
+    canvasWrapEl.classList.remove('pan-ready');
+});
+
+canvasWrapEl.addEventListener('mousedown', (e) => {
+    // Only initiate a pan when:
+    //  - spacebar is held (left button), or
+    //  - middle mouse button is pressed
+    const isMiddle = e.button === 1;
+    const isSpaceDrag = state.spacePressed && e.button === 0;
+    if (!isMiddle && !isSpaceDrag) return;
+    // Don't pan when starting on interactive elements
+    if (e.target.closest('.node-btn, .port, .lib-item')) return;
+    e.preventDefault();
+    state.panning = true;
+    canvasWrapEl.classList.add('panning');
+    const startX = e.clientX;
+    const startY = e.clientY;
+    const startScrollLeft = canvasWrapEl.scrollLeft;
+    const startScrollTop = canvasWrapEl.scrollTop;
+    const onMove = (ev) => {
+        canvasWrapEl.scrollLeft = startScrollLeft - (ev.clientX - startX);
+        canvasWrapEl.scrollTop = startScrollTop - (ev.clientY - startY);
+    };
+    const onUp = () => {
+        state.panning = false;
+        canvasWrapEl.classList.remove('panning');
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+    };
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+});
+
+// Prevent the browser's middle-click autoscroll (so our pan handler wins)
+canvasWrapEl.addEventListener('auxclick', (e) => { if (e.button === 1) e.preventDefault(); });
+
+// ============================================================
 // BOOT
 // ============================================================
 function preloadStarter() {
@@ -1613,6 +2564,7 @@ function preloadStarter() {
     renderAll();
 }
 
+loadTheme();
 renderUIStrings();
 renderLibrary();
 renderLevelsMenu();
