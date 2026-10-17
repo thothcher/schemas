@@ -12,7 +12,9 @@ A static web app demo that teaches Angular flow concepts using a draggable block
 ## Features
 
 - Block library for learning Angular architecture concepts.
+- Code samples and explanations follow current **Angular 22** practice: standalone components, `inject()`, signals (`signal`, `computed`, `input()`, `toSignal`), resources (`rxResource` / `httpResource`), built-in control flow (`@if` / `@for`), Signal Forms, functional guards/interceptors and lazy `loadComponent` routes. Components are OnPush by default in v22, and `HttpClient` uses Fetch by default.
 - Drag-and-drop canvas with nodes and connections.
+- Reference schemas (the **Examples** button) open as read-only previews: blocks can be dragged to rearrange them, and **Unlock to edit** makes them fully editable.
 - Multi-language UI support: English and Georgian.
 - Run, reset, and answer-check controls.
 - Interactive inspector with block details and code examples.

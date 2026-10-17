@@ -28,11 +28,11 @@ const ICONS = {
     tokenStore: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
     authGuard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>',
     asyncState: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>',
-    reactiveForm: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>',
+    signalForm: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>',
     paginate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>',
     webSocket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>',
     routeParams: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
-    lazyModule: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+    lazyRoute: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
     rotate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>',
     dive: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6"/><path d="M12 9l3 3-3 3"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
@@ -144,8 +144,8 @@ const T = {
     livePreview:  ['Live data fetched from your URL', 'მონაცემები ჩამოტვირთულია მითითებული URL-დან'],
     fetchFailed:  ['Fetch failed — showing mock data', 'მოთხოვნა ვერ მოხერხდა — ნაჩვენებია ნიმუში'],
     examplesTitle:['Reference Schemas', 'მზა სქემები'],
-    loadEditable: ['Load to canvas (edit)', 'ჩატვირთვა (რედაქტირება)'],
-    readonlyHint: ['Read-only preview — load it to edit.', 'მხოლოდ საჩვენებლად — ჩატვირთე რომ შეცვალო.'],
+    loadEditable: ['Unlock to edit', 'რედაქტირების ჩართვა'],
+    readonlyHint: ['Read-only preview — drag blocks to rearrange, or unlock it to edit.', 'მხოლოდ საჩვენებლად — გადაადგილე ბლოკები ან ჩართე რედაქტირება.'],
     subMissingMsg:['Dive into the {block} block and complete its internals.', 'შედი {block} ბლოკში და დაასრულე მისი შინაარსი.'],
     snapOn:       ['Snap to grid: on', 'ბადეზე მიწებება: ჩართულია'],
     snapOff:      ['Snap to grid: off', 'ბადეზე მიწებება: გამორთულია']
@@ -241,10 +241,10 @@ const NODE_DEFS = {
         category: ['Angular', 'Angular'],
         color: '',
         short: ['HttpClient wrapper class', 'HttpClient-ის გასახვევი კლასი'],
-        long: ['A service is a class marked with @Injectable that wraps all your HTTP calls. Components inject it instead of calling HttpClient directly. This keeps components clean and makes the code reusable.',
-               'სერვისი არის @Injectable კლასი, რომელშიც თავმოყრილია HTTP გამოძახებები. კომპონენტი იღებს მას ინჯექციით — არ უხდება HttpClient-ის პირდაპირ გამოყენება.'],
+        long: ['A service is a class marked with @Injectable that wraps all your HTTP calls. Components get it with inject() instead of calling HttpClient directly. This keeps components clean and makes the code reusable.',
+               'სერვისი არის @Injectable კლასი, რომელშიც თავმოყრილია HTTP გამოძახებები. კომპონენტი მას inject()-ით იღებს — არ უხდება HttpClient-ის პირდაპირ გამოყენება.'],
         file: 'product.service.ts',
-        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> ProductService {\n  <span class="k">constructor</span>(<span class="k">private</span> http: HttpClient) {}\n  getAll() {\n    <span class="k">return this</span>.http.get&lt;Product[]&gt;(<span class="s">\'/api/products\'</span>);\n  }\n}',
+        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> ProductService {\n  <span class="k">private readonly</span> http = <span class="k">inject</span>(HttpClient);\n\n  getAll() {\n    <span class="k">return this</span>.http.get&lt;Product[]&gt;(<span class="s">\'/api/products\'</span>);\n  }\n}',
         mistake: ['Calling HttpClient directly from a component instead of through a service.',
                   'HttpClient-ის გამოძახება პირდაპირ კომპონენტიდან, სერვისის ნაცვლად.']
     },
@@ -253,34 +253,34 @@ const NODE_DEFS = {
         category: ['Angular', 'Angular'],
         color: '',
         short: ['Component logic & state', 'კომპონენტის ლოგიკა'],
-        long: ['The component class injects the service, calls it in ngOnInit, and stores the result on a property. The template will then read this property to render the data.',
-               'კომპონენტი იღებს სერვისს, ngOnInit-ში გამოიძახებს და შედეგს ინახავს თვისებაში. შემდეგ HTML წაიკითხავს ამ თვისებას.'],
-        file: 'products.component.ts',
-        code: '<span class="k">export class</span> ProductsComponent <span class="k">implements</span> OnInit {\n  products: Product[] = [];\n  <span class="k">constructor</span>(<span class="k">private</span> svc: ProductService) {}\n  ngOnInit() {\n    <span class="k">this</span>.svc.getAll()\n      .subscribe(p => <span class="k">this</span>.products = p);\n  }\n}',
-        mistake: ['Forgetting to subscribe — Angular observables are lazy and do nothing until subscribed.',
-                  'subscribe-ის დავიწყება — Observable-ი არაფერს აკეთებს subscribe-ის გარეშე.']
+        long: ['The component class injects the service with inject() and turns the response into a signal with toSignal(). No manual subscribe() and no ngOnInit needed — the template just reads the signal. Components are OnPush by default in Angular 22, so signals are what keep the view up to date.',
+               'კომპონენტი inject()-ით იღებს სერვისს და toSignal()-ით აქცევს პასუხს სიგნალად. subscribe() და ngOnInit საჭირო აღარ არის — HTML უბრალოდ კითხულობს სიგნალს. Angular 22-ში კომპონენტები ნაგულისხმევად OnPush-ია, ამიტომ ხედს სიგნალები ანახლებს.'],
+        file: 'products.ts',
+        code: '<span class="k">@Component</span>({\n  selector: <span class="s">\'app-products\'</span>,\n  templateUrl: <span class="s">\'./products.html\'</span>\n})\n<span class="k">export class</span> Products {\n  <span class="k">private readonly</span> svc = <span class="k">inject</span>(ProductService);\n  <span class="k">protected readonly</span> products = <span class="k">toSignal</span>(\n    <span class="k">this</span>.svc.getAll(),\n    { initialValue: [] }\n  );\n}',
+        mistake: ['Calling subscribe() by hand and leaking the subscription. toSignal() subscribes for you and cleans up when the component is destroyed.',
+                  'subscribe()-ის ხელით გამოძახება და გამოწერის გაუქმების დავიწყება. toSignal() თავად გამოიწერს და კომპონენტის განადგურებისას გააუქმებს.']
     },
     pipe: {
         label: ['Filter / Pipe', 'ფილტრი / Pipe'],
         category: ['Angular', 'Angular'],
         color: 'c-info',
         short: ['Transform or filter data', 'მონაცემთა ფილტრაცია'],
-        long: ['A pipe transforms data inside a template. For filtering a list (like only in-stock products), it is usually cleaner to use a plain JavaScript .filter() in the component, exposed via a getter.',
-               'Pipe-ი გარდაქმნის მონაცემს HTML-ში. სიის გასაფილტრად ხშირად სჯობს .filter() კომპონენტში, გამოშვებული getter-ით.'],
-        file: 'in-stock.pipe.ts · or array.filter',
-        code: '<span class="c">// In the component:</span>\n<span class="k">get</span> inStock() {\n  <span class="k">return this</span>.products\n    .filter(p => p.inStock);\n}',
-        mistake: ['Calling .filter() inside the template — it re-runs on every change detection cycle.',
-                  '.filter()-ის HTML-ში გამოძახება — ხშირად მუშავდება და ანელებს აპს.']
+        long: ['A pipe transforms data inside a template. For filtering a list (like only in-stock products), it is usually cleaner to derive a computed() signal in the component. It is cached and only recalculated when products() changes.',
+               'Pipe-ი გარდაქმნის მონაცემს HTML-ში. სიის გასაფილტრად ხშირად სჯობს კომპონენტში computed() სიგნალი — ის ქეშირდება და მხოლოდ products()-ის ცვლილებისას თავიდან ითვლება.'],
+        file: 'in-stock.pipe.ts · or computed()',
+        code: '<span class="c">// In the component:</span>\n<span class="k">protected readonly</span> inStock = <span class="k">computed</span>(() =&gt;\n  <span class="k">this</span>.products().filter(p =&gt; p.inStock)\n);',
+        mistake: ['Calling .filter() (or a getter) inside the template — it re-runs on every change detection cycle. computed() caches the result.',
+                  '.filter()-ის ან getter-ის გამოძახება HTML-ში — ყოველ ცვლილებაზე თავიდან სრულდება და ანელებს აპს. computed() შედეგს ინახავს.']
     },
     componentHtml: {
         label: ['Component (.html)', 'კომპონენტი (.html)'],
         category: ['Angular', 'Angular'],
         color: '',
         short: ['Template / view', 'ხედი / შაბლონი'],
-        long: ['The template uses @for (Angular 17+) or *ngFor to loop over the data and render an element for each item. It reads the property you set in the .ts file.',
-               'HTML იყენებს @for-ს (Angular 17+) ან *ngFor-ს მონაცემთა გადასახედად და ხატავს ცალკეულ ელემენტს.'],
-        file: 'products.component.html',
-        code: '<span class="k">@for</span> (p of products; track p.id) {\n  &lt;div class=<span class="s">"card"</span>&gt;\n    &lt;h3&gt;{{ p.name }}&lt;/h3&gt;\n    &lt;span&gt;{{ p.price }}&lt;/span&gt;\n  &lt;/div&gt;\n}',
+        long: ['The template uses the built-in @for block (it replaces *ngFor) to loop over the data and render an element for each item. It reads the signal from the .ts file by calling it: products().',
+               'HTML იყენებს ჩაშენებულ @for ბლოკს (ცვლის *ngFor-ს) მონაცემთა გადასახედად და ხატავს ცალკეულ ელემენტს. .ts-ში არსებულ სიგნალს ის გამოძახებით კითხულობს: products().'],
+        file: 'products.html',
+        code: '<span class="k">@for</span> (p of products(); track p.id) {\n  &lt;div class=<span class="s">"card"</span>&gt;\n    &lt;h3&gt;{{ p.name }}&lt;/h3&gt;\n    &lt;span&gt;{{ p.price }}&lt;/span&gt;\n  &lt;/div&gt;\n} <span class="k">@empty</span> {\n  &lt;p&gt;No products yet.&lt;/p&gt;\n}',
         mistake: ['Forgetting the track expression in @for — Angular needs it to track items efficiently.',
                   '@for-ში track-ის დავიწყება — Angular-ს ეს სჭირდება ეფექტური განახლებისთვის.']
     },
@@ -301,12 +301,12 @@ const NODE_DEFS = {
         category: ['Angular', 'Angular'],
         color: '',
         short: ['URL-based page switcher', 'URL-ის მიხედვით გვერდის ცვლა'],
-        long: ['RouterOutlet is the slot where Angular mounts the component that matches the current URL. Define routes in app.routes.ts, then put <router-outlet> in your shell template.',
-               'RouterOutlet არის ის ადგილი, სადაც Angular ხატავს იმ კომპონენტს, რომელიც URL-ს შეესაბამება.'],
-        file: 'app.routes.ts',
-        code: '<span class="k">export const</span> routes: Routes = [\n  {\n    path: <span class="s">\'products\'</span>,\n    component: ProductsComponent\n  },\n  { path: <span class="s">\'\'</span>, redirectTo: <span class="s">\'products\'</span> }\n];',
-        mistake: ['Forgetting <router-outlet> in the app template — routes match, but nothing renders.',
-                  'app HTML-ში <router-outlet>-ის დავიწყება — მისამართი ემთხვევა, მაგრამ არაფერი ჩანს.']
+        long: ['RouterOutlet is the slot where Angular mounts the component that matches the current URL. Define routes in app.routes.ts, register them with provideRouter() in app.config.ts, then put &lt;router-outlet /&gt; in your root template.',
+               'RouterOutlet არის ის ადგილი, სადაც Angular ხატავს იმ კომპონენტს, რომელიც URL-ს შეესაბამება. მარშრუტები app.routes.ts-შია, app.config.ts-ში provideRouter()-ით რეგისტრირდება, ხოლო ფესვ HTML-ში &lt;router-outlet /&gt; იდება.'],
+        file: 'app.routes.ts · app.config.ts',
+        code: '<span class="k">export const</span> routes: Routes = [\n  {\n    path: <span class="s">\'products\'</span>,\n    component: Products\n  },\n  { path: <span class="s">\'\'</span>, redirectTo: <span class="s">\'products\'</span>, pathMatch: <span class="s">\'full\'</span> }\n];\n\n<span class="c">// app.config.ts</span>\nproviders: [<span class="k">provideRouter</span>(routes)]',
+        mistake: ['Forgetting RouterOutlet in the root component\'s imports (or &lt;router-outlet /&gt; in its template) — routes match, but nothing renders.',
+                  'RouterOutlet-ის root კომპონენტის imports-ში (ან &lt;router-outlet /&gt;-ის მის HTML-ში) დავიწყება — მისამართი ემთხვევა, მაგრამ არაფერი ჩანს.']
     },
     interceptor: {
         label: ['HTTP Interceptor', 'HTTP Interceptor'],
@@ -316,7 +316,7 @@ const NODE_DEFS = {
         long: ['An interceptor sits between every service call and the API. It can attach an Authorization token to all requests automatically, so you never repeat that code.',
                'Interceptor-ი ზის სერვისსა და API-ს შორის — ავტომატურად აყენებს Authorization ჰედერს ყველა მოთხოვნაზე.'],
         file: 'auth.interceptor.ts',
-        code: '<span class="k">export const</span> authInterceptor: HttpInterceptorFn =\n  (req, next) => {\n    <span class="k">const</span> token = localStorage.getItem(<span class="s">\'token\'</span>);\n    <span class="k">const</span> cloned = req.clone({\n      setHeaders: { Authorization: <span class="s">`Bearer ${token}`</span> }\n    });\n    <span class="k">return</span> next(cloned);\n  };',
+        code: '<span class="k">export const</span> authInterceptor: HttpInterceptorFn =\n  (req, next) =&gt; {\n    <span class="k">const</span> token = <span class="k">inject</span>(TokenStore).get();\n    <span class="k">if</span> (!token) <span class="k">return</span> next(req);\n    <span class="k">return</span> next(req.clone({\n      setHeaders: { Authorization: <span class="s">`Bearer ${token}`</span> }\n    }));\n  };',
         mistake: ['Forgetting to register it in app.config.ts with provideHttpClient(withInterceptors(...)).',
                   'app.config.ts-ში provideHttpClient(withInterceptors(...))-ის დავიწყება.']
     },
@@ -327,10 +327,10 @@ const NODE_DEFS = {
         category: ['Components', 'კომპონენტები'],
         color: '',
         short: ['Fetches & holds the array', 'იღებს და ინახავს მასივს'],
-        long: ['The list component is a parent. It injects the service, fetches the array, and stores it. The HTML loops and passes each item down to a child Card component via @Input.',
-               'სიის კომპონენტი მშობელია. ის იღებს სერვისს, ჩამოტვირთავს მასივს და ინახავს. HTML-ში გადასცემს თითო ელემენტს Card-ის შვილ კომპონენტს @Input-ის გავლით.'],
-        file: 'product-list.component.ts',
-        code: '<span class="k">export class</span> ProductListComponent {\n  products: Product[] = [];\n  <span class="k">constructor</span>(<span class="k">private</span> svc: ProductService) {\n    svc.getAll().subscribe(p => <span class="k">this</span>.products = p);\n  }\n}',
+        long: ['The list component is a parent. It injects the service, turns the array into a signal, and its template loops and passes each item down to a child Card component through a signal input.',
+               'სიის კომპონენტი მშობელია. ის იღებს სერვისს და მასივს სიგნალად აქცევს. HTML-ში თითო ელემენტს Card-ის შვილ კომპონენტს გადასცემს სიგნალური input-ის გავლით.'],
+        file: 'product-list.ts',
+        code: '<span class="k">export class</span> ProductList {\n  <span class="k">private readonly</span> svc = <span class="k">inject</span>(ProductService);\n  <span class="k">protected readonly</span> products = <span class="k">toSignal</span>(\n    <span class="k">this</span>.svc.getAll(),\n    { initialValue: [] }\n  );\n}',
         mistake: ['Doing everything inside one big component instead of splitting List and Card — hard to reuse.',
                   'ყველაფრის ერთ კომპონენტში გაკეთება — გართულდება მრავალჯერადი გამოყენება.']
     },
@@ -339,10 +339,10 @@ const NODE_DEFS = {
         category: ['Components', 'კომპონენტები'],
         color: '',
         short: ['Loops and mounts cards', 'ციკლავს და ხატავს ბარათებს'],
-        long: ['The list template uses @for to loop over the array and renders one <app-product-card> for each item, passing the item via property binding [product].',
-               'სიის HTML იყენებს @for-ს ციკლისთვის და ხატავს <app-product-card>-ს თითო ერთეულზე, ელემენტს გადასცემს [product]-ით.'],
-        file: 'product-list.component.html',
-        code: '<span class="k">@for</span> (p of products; track p.id) {\n  &lt;app-product-card\n    [product]=<span class="s">"p"</span>&gt;\n  &lt;/app-product-card&gt;\n}',
+        long: ['The list template uses @for to loop over the signal and renders one &lt;app-product-card /&gt; for each item, passing the item via property binding [product].',
+               'სიის HTML იყენებს @for-ს ციკლისთვის და ხატავს &lt;app-product-card /&gt;-ს თითო ერთეულზე, ელემენტს გადასცემს [product]-ით.'],
+        file: 'product-list.html',
+        code: '<span class="k">@for</span> (p of products(); track p.id) {\n  &lt;app-product-card [product]=<span class="s">"p"</span> /&gt;\n}',
         mistake: ['Forgetting square brackets in [product] — that turns property binding into a plain string.',
                   '[product]-ში კვადრატული ფრჩხილების დავიწყება — შედეგად String გადადის ობიექტის ნაცვლად.']
     },
@@ -350,11 +350,11 @@ const NODE_DEFS = {
         label: ['Card Component (.ts)', 'ბარათის კომპონენტი (.ts)'],
         category: ['Components', 'კომპონენტები'],
         color: '',
-        short: ['Receives @Input() item', 'იღებს @Input() ერთეულს'],
-        long: ['A reusable child component. It declares @Input() product and renders one card. The parent decides which item to give it — the card itself knows nothing about the list.',
-               'მრავალჯერადი შვილი კომპონენტი. აქვს @Input() product და ხატავს ერთ ბარათს. სიის შესახებ მას არ ვუყვები.'],
-        file: 'product-card.component.ts',
-        code: '<span class="k">@Component</span>({ selector: <span class="s">\'app-product-card\'</span>, ... })\n<span class="k">export class</span> ProductCardComponent {\n  <span class="k">@Input</span>() product!: Product;\n}',
+        short: ['Receives input() item', 'იღებს input() ერთეულს'],
+        long: ['A reusable child component. It declares a signal input, product = input.required&lt;Product&gt;(), and renders one card. The parent decides which item to give it — the card itself knows nothing about the list.',
+               'მრავალჯერადი შვილი კომპონენტი. აქვს სიგნალური input — product = input.required&lt;Product&gt;() — და ხატავს ერთ ბარათს. სიის შესახებ მას არაფერი იცის.'],
+        file: 'product-card.ts',
+        code: '<span class="k">@Component</span>({\n  selector: <span class="s">\'app-product-card\'</span>,\n  templateUrl: <span class="s">\'./product-card.html\'</span>\n})\n<span class="k">export class</span> ProductCard {\n  <span class="k">readonly</span> product = <span class="k">input.required</span>&lt;Product&gt;();\n}',
         mistake: ['Fetching data inside a child card — children should be dumb and only receive data from the parent.',
                   'მონაცემთა მოპოვება შვილ კომპონენტში — შვილი მხოლოდ უნდა იღებდეს მონაცემს მშობლისგან.']
     },
@@ -363,10 +363,10 @@ const NODE_DEFS = {
         category: ['Components', 'კომპონენტები'],
         color: '',
         short: ['Renders one product', 'ხატავს ერთ პროდუქტს'],
-        long: ['The card template renders one product using interpolation. This HTML is reused for every item in the list.',
-               'ბარათის HTML ხატავს ერთ პროდუქტს interpolation-ის გამოყენებით. ეს HTML მეორდება სიის თითო ერთეულზე.'],
-        file: 'product-card.component.html',
-        code: '&lt;div class=<span class="s">"card"</span>&gt;\n  &lt;h3&gt;{{ product.name }}&lt;/h3&gt;\n  &lt;p&gt;{{ product.price | currency }}&lt;/p&gt;\n  &lt;span&gt;\n    {{ product.inStock ? <span class="s">\'In stock\'</span> : <span class="s">\'Out\'</span> }}\n  &lt;/span&gt;\n&lt;/div&gt;',
+        long: ['The card template renders one product using interpolation. A signal input is read by calling it — product().name. This HTML is reused for every item in the list.',
+               'ბარათის HTML ხატავს ერთ პროდუქტს interpolation-ის გამოყენებით. სიგნალური input იკითხება გამოძახებით — product().name. ეს HTML მეორდება სიის თითო ერთეულზე.'],
+        file: 'product-card.html',
+        code: '&lt;div class=<span class="s">"card"</span>&gt;\n  &lt;h3&gt;{{ product().name }}&lt;/h3&gt;\n  &lt;p&gt;{{ product().price | currency }}&lt;/p&gt;\n  &lt;span&gt;\n    <span class="k">@if</span> (product().inStock) { In stock } <span class="k">@else</span> { Out }\n  &lt;/span&gt;\n&lt;/div&gt;',
         mistake: ['Adding styles inline instead of using a component stylesheet — harder to maintain.',
                   'ინლაინ სტილების გამოყენება სტილების ფაილის ნაცვლად — გართულდება მხარდაჭერა.']
     },
@@ -375,22 +375,22 @@ const NODE_DEFS = {
         category: ['Components', 'კომპონენტები'],
         color: '',
         short: ['Root template', 'ფესვი HTML'],
-        long: ['The root template of your app. It mounts the list component (or <router-outlet>) and contains the shell — header, sidebar, footer.',
-               'აპლიკაციის ფესვი HTML. ის ხატავს List კომპონენტს ან <router-outlet>-ს და მოიცავს ერთიან კარკასს.'],
-        file: 'app.component.html',
-        code: '&lt;header&gt;Shop&lt;/header&gt;\n&lt;main&gt;\n  &lt;app-product-list&gt;&lt;/app-product-list&gt;\n&lt;/main&gt;',
-        mistake: ['Cramming everything into app.component.html — split into smaller components.',
-                  'ყველაფრის app.component.html-ში ჩაყრა — დაყავი პატარა კომპონენტებად.']
+        long: ['The root template of your app. It mounts the list component (or &lt;router-outlet /&gt;) and contains the shell — header, sidebar, footer.',
+               'აპლიკაციის ფესვი HTML. ის ხატავს List კომპონენტს ან &lt;router-outlet /&gt;-ს და მოიცავს ერთიან კარკასს.'],
+        file: 'app.html',
+        code: '&lt;header&gt;Shop&lt;/header&gt;\n&lt;main&gt;\n  &lt;app-product-list /&gt;\n&lt;/main&gt;',
+        mistake: ['Cramming everything into app.html — split into smaller components.',
+                  'ყველაფრის app.html-ში ჩაყრა — დაყავი პატარა კომპონენტებად.']
     },
     searchInput: {
         label: ['Search Input', 'ძიების ველი'],
         category: ['Forms', 'ფორმები'],
         color: 'c-info',
         short: ['User types a query', 'მომხმარებელი წერს მოთხოვნას'],
-        long: ['An <input> in the template bound with [(ngModel)] or a FormControl. Each keystroke pushes a value into the component, which then fires a search request.',
-               '<input> ველი HTML-ში, რომელიც დაკავშირებულია [(ngModel)] ან FormControl-ით. ყოველი ღილაკის დაჭერით კომპონენტი იღებს მნიშვნელობას.'],
-        file: 'search.component.html',
-        code: '&lt;input\n  [formControl]=<span class="s">"query"</span>\n  placeholder=<span class="s">"Search…"</span>&gt;',
+        long: ['An &lt;input&gt; in the template bound to a Signal Form field with [formField]. Each keystroke updates the model signal in the component, which then fires a search request.',
+               '&lt;input&gt; ველი HTML-ში, რომელიც [formField]-ით არის დაკავშირებული Signal Form-ის ველთან. ყოველი ღილაკის დაჭერით კომპონენტის მოდელი სიგნალი ახლდება.'],
+        file: 'search.html',
+        code: '<span class="c">// component</span>\nmodel = <span class="k">signal</span>({ query: <span class="s">\'\'</span> });\nsearchForm = <span class="k">form</span>(<span class="k">this</span>.model);\n\n<span class="c">&lt;!-- template --&gt;</span>\n&lt;input\n  [formField]=<span class="s">"searchForm.query"</span>\n  placeholder=<span class="s">"Search…"</span>&gt;',
         mistake: ['Firing an HTTP call on every keystroke without debounce — that floods the server.',
                   'ყოველი ღილაკის დაჭერისას HTTP გამოძახება debounce-ის გარეშე — სერვერი იტვირთება.']
     },
@@ -402,7 +402,7 @@ const NODE_DEFS = {
         long: ['debounceTime is an RxJS operator that delays values. If the user is still typing, it cancels the previous timer. Only the last value after a quiet period reaches the service.',
                'debounceTime არის RxJS ოპერატორი — დააყოვნებს მნიშვნელობას. სანამ მომხმარებელი წერს, წინა ტაიმერი იშლება. სერვისამდე აღწევს მხოლოდ ბოლო ღირებულება.'],
         file: 'rxjs operator',
-        code: '<span class="k">this</span>.query.valueChanges.pipe(\n  debounceTime(<span class="n">300</span>),\n  distinctUntilChanged(),\n  switchMap(q => svc.search(q))\n).subscribe(...);',
+        code: 'results = <span class="k">toSignal</span>(\n  <span class="k">toObservable</span>(<span class="k">this</span>.model).pipe(\n    map(m =&gt; m.query),\n    debounceTime(<span class="n">300</span>),\n    distinctUntilChanged(),\n    switchMap(q =&gt; svc.search(q))\n  ),\n  { initialValue: [] }\n);',
         mistake: ['Using 50ms — too short, still floods. 300ms is a good default for search inputs.',
                   '50მწმ-ი ძალიან მცირეა, კიდევ მრავალი მოთხოვნა გადადის. 300მწმ-ი ნორმალური ნაგულისხმევია.']
     },
@@ -411,10 +411,10 @@ const NODE_DEFS = {
         category: ['Forms', 'ფორმები'],
         color: 'c-info',
         short: ['Email + password input', 'ემაილი და პაროლი'],
-        long: ['A form with email and password fields. On submit, the values are passed to the auth service. Use a reactive form for validation control.',
-               'ფორმა ემაილით და პაროლით. გაგზავნისას მნიშვნელობები ჩაბარდება auth სერვისს. გამოიყენე reactive form ვალიდაციისთვის.'],
-        file: 'login.component.html',
-        code: '&lt;form [formGroup]=<span class="s">"form"</span>\n      (ngSubmit)=<span class="s">"submit()"</span>&gt;\n  &lt;input formControlName=<span class="s">"email"</span>&gt;\n  &lt;input formControlName=<span class="s">"password"</span>\n         type=<span class="s">"password"</span>&gt;\n  &lt;button&gt;Login&lt;/button&gt;\n&lt;/form&gt;',
+        long: ['A form with email and password fields, built with Signal Forms: the model is a signal, form() wraps it, and validators live in a schema. On submit, the values are passed to the auth service.',
+               'ფორმა ემაილით და პაროლით, აგებული Signal Forms-ით: მოდელი სიგნალია, form() მას ახვევს, ვალიდატორები კი schema-შია. გაგზავნისას მნიშვნელობები ჩაბარდება auth სერვისს.'],
+        file: 'login.html',
+        code: '&lt;form (submit)=<span class="s">"onSubmit($event)"</span>&gt;\n  &lt;input [formField]=<span class="s">"loginForm.email"</span>&gt;\n  &lt;input [formField]=<span class="s">"loginForm.password"</span>\n         type=<span class="s">"password"</span>&gt;\n  &lt;button [disabled]=<span class="s">"loginForm().invalid()"</span>&gt;\n    Login\n  &lt;/button&gt;\n&lt;/form&gt;',
         mistake: ['Storing the password in component state after login — never keep raw passwords in memory.',
                   'პაროლის შენახვა კომპონენტში ლოგინის შემდეგ — არასოდეს დატოვო პაროლი მეხსიერებაში.']
     },
@@ -426,7 +426,7 @@ const NODE_DEFS = {
         long: ['A service dedicated to authentication. It calls /api/login, receives a token, hands it to the token store, and exposes signals like isLoggedIn.',
                'სპეციალური სერვისი ავტორიზაციისთვის. გამოიძახებს /api/login-ს, მიიღებს ტოკენს, შეინახავს tokenStore-ში და გასცემს isLoggedIn-ის სიგნალს.'],
         file: 'auth.service.ts',
-        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> AuthService {\n  <span class="k">constructor</span>(<span class="k">private</span> http: HttpClient,\n              <span class="k">private</span> store: TokenStore) {}\n  login(email, password) {\n    <span class="k">return this</span>.http.post(<span class="s">\'/api/login\'</span>, { email, password })\n      .pipe(tap(r => <span class="k">this</span>.store.set(r.token)));\n  }\n}',
+        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> AuthService {\n  <span class="k">private readonly</span> http = <span class="k">inject</span>(HttpClient);\n  <span class="k">private readonly</span> store = <span class="k">inject</span>(TokenStore);\n\n  login(email: string, password: string) {\n    <span class="k">return this</span>.http.post&lt;{ token: string }&gt;(<span class="s">\'/api/login\'</span>, { email, password })\n      .pipe(tap(r =&gt; <span class="k">this</span>.store.set(r.token)));\n  }\n}',
         mistake: ['Putting auth logic inside the login component instead of a dedicated service.',
                   'ავტორიზაციის ლოგიკის ჩაყრა login კომპონენტში სპეციალური სერვისის ნაცვლად.']
     },
@@ -459,36 +459,36 @@ const NODE_DEFS = {
         category: ['Routing', 'მარშრუტიზაცია'],
         color: 'c-info',
         short: ['Read :id from URL', 'წაიკითხავს URL-ის :id-ს'],
-        long: ['Defined as :id in the route. The component reads it via ActivatedRoute and uses it to fetch the matching record from the service.',
-               'მარშრუტში მიეთითება :id. კომპონენტი წაიკითხავს ActivatedRoute-ით და გამოიყენებს სერვერიდან კონკრეტული ჩანაწერის ჩამოსატანად.'],
-        file: 'app.routes.ts · ActivatedRoute',
-        code: '{ path: <span class="s">\'product/:id\'</span>, component: DetailComponent }\n\n<span class="c">// inside component:</span>\n<span class="k">const</span> id = route.snapshot.paramMap.get(<span class="s">\'id\'</span>);\nsvc.getOne(id).subscribe(...)',
-        mistake: ['Reading params synchronously when the same component is reused for different ids — switch to params observable.',
-                  'პარამეტრის სინქრონული წაკითხვა, როცა კომპონენტი იცვლება id-ის მიხედვით — გადადი params Observable-ზე.']
+        long: ['Defined as :id in the route. With withComponentInputBinding() the router hands it straight to a component input, and a resource refetches the matching record from the service whenever the id changes.',
+               'მარშრუტში მიეთითება :id. withComponentInputBinding()-ით როუტერი მას პირდაპირ კომპონენტის input-ს გადასცემს, ხოლო resource-ი id-ის ყოველ ცვლილებაზე თავიდან ჩამოტვირთავს შესაბამის ჩანაწერს სერვისიდან.'],
+        file: 'app.routes.ts · app.config.ts',
+        code: '{ path: <span class="s">\'product/:id\'</span>, component: ProductDetail }\n\n<span class="c">// app.config.ts:</span>\n<span class="c">// provideRouter(routes, withComponentInputBinding())</span>\n\n<span class="c">// inside the component:</span>\nid = <span class="k">input.required</span>&lt;string&gt;();\nproduct = <span class="k">rxResource</span>({\n  params: () =&gt; <span class="k">this</span>.id(),\n  stream: ({ params }) =&gt; svc.getOne(params)\n});',
+        mistake: ['Reading route.snapshot once — when the same component is reused for another id it never updates. Bind the param to an input() and let a resource react to it.',
+                  'route.snapshot-ის ერთხელ წაკითხვა — როცა კომპონენტი სხვა id-ზე თავიდან გამოიყენება, ის აღარ ახლდება. მიაბი პარამეტრი input()-ს და resource-ი მას თავად გამოეხმაურება.']
     },
     asyncState: {
         label: ['Loading / Error State', 'ჩატვირთვა / შეცდომა'],
         category: ['Advanced', 'დამატებითი'],
         color: 'c-warning',
         short: ['Spinner & error UI', 'ხატულა და შეცდომა'],
-        long: ['Three UI states for any async fetch: loading, success, error. The component holds flags (loading, error) and the template shows the right one.',
-               'სამი მდგომარეობა ნებისმიერი ასინქრონული ფეჩისთვის: loading, success, error. კომპონენტს აქვს ფლეგები და HTML აჩვენებს შესაბამისს.'],
-        file: 'products.component.ts',
-        code: 'loading = signal(<span class="k">true</span>);\nerror = signal(<span class="k">null</span>);\nproducts = signal([]);\n\nngOnInit() {\n  svc.getAll().subscribe({\n    next:  p =&gt; { <span class="k">this</span>.products.set(p); <span class="k">this</span>.loading.set(<span class="k">false</span>); },\n    error: e =&gt; { <span class="k">this</span>.error.set(e); <span class="k">this</span>.loading.set(<span class="k">false</span>); }\n  });\n}',
-        mistake: ['Showing only loading and forgetting the error case — users see a spinner forever.',
-                  'მხოლოდ loading-ის ჩვენება და შეცდომის უგულებელყოფა — მომხმარებელი ხედავს მუდმივ ხატულას.']
+        long: ['Three UI states for any async fetch: loading, success, error. A resource (rxResource or httpResource) gives you isLoading(), error() and value() signals out of the box, and the template shows the right one.',
+               'სამი მდგომარეობა ნებისმიერი ასინქრონული ფეჩისთვის: loading, success, error. resource-ი (rxResource ან httpResource) უკვე გაძლევს isLoading(), error() და value() სიგნალებს, ხოლო HTML აჩვენებს შესაბამისს.'],
+        file: 'products.ts',
+        code: 'products = <span class="k">rxResource</span>({\n  stream: () =&gt; <span class="k">this</span>.svc.getAll()\n});\n\n<span class="c">// template</span>\n@if (products.isLoading()) { &lt;app-spinner /&gt; }\n@else if (products.error()) { &lt;p&gt;Could not load&lt;/p&gt; }\n@else if (products.hasValue()) {\n  <span class="c">&lt;!-- products.value() --&gt;</span>\n}',
+        mistake: ['Showing only loading and forgetting the error case — users see a spinner forever. Also read value() only after hasValue(): it throws while the resource is in an error state.',
+                  'მხოლოდ loading-ის ჩვენება და შეცდომის უგულებელყოფა — მომხმარებელი ხედავს მუდმივ ხატულას. value()-ც hasValue()-ს შემდეგ წაიკითხე: შეცდომის მდგომარეობაში ის გამონაკლისს აგდებს.']
     },
-    reactiveForm: {
-        label: ['Reactive Form', 'რეაქტიული ფორმა'],
+    signalForm: {
+        label: ['Signal Form', 'Signal ფორმა'],
         category: ['Forms', 'ფორმები'],
         color: 'c-info',
-        short: ['FormGroup + validators', 'FormGroup და ვალიდატორი'],
-        long: ['A FormGroup built in the component class, with FormControls and Validators. The template uses [formGroup] and formControlName to bind inputs.',
-               'FormGroup შენდება კომპონენტში, FormControl-ებითა და Validator-ებით. HTML იყენებს [formGroup]-ს და formControlName-ს.'],
-        file: 'product-form.component.ts',
-        code: 'form = <span class="k">new</span> FormGroup({\n  name:  <span class="k">new</span> FormControl(<span class="s">\'\'</span>, [Validators.required]),\n  price: <span class="k">new</span> FormControl(<span class="n">0</span>, [Validators.min(<span class="n">0</span>)])\n});\n\nsubmit() {\n  <span class="k">if</span> (<span class="k">this</span>.form.invalid) <span class="k">return</span>;\n  svc.create(<span class="k">this</span>.form.value).subscribe();\n}',
-        mistake: ['Submitting an invalid form to the server — always check form.invalid first.',
-                  'არასწორი ფორმის გაგზავნა — ყოველთვის ჯერ შეამოწმე form.invalid.']
+        short: ['Model signal + validators', 'მოდელი სიგნალი + ვალიდატორები'],
+        long: ['A form built from a model signal with form(). Validators such as required() and min() are declared once in a schema, and the template binds inputs with [formField]. Classic Reactive Forms (FormGroup) still work, but Signal Forms are the signal-first way to build forms.',
+               'ფორმა, რომელიც მოდელი სიგნალიდან იქმნება form()-ით. ვალიდატორები (required(), min()...) ერთხელ აღიწერება schema-ში, ხოლო HTML-ში ველები [formField]-ით უკავშირდება. კლასიკური Reactive Forms (FormGroup) ისევ მუშაობს, მაგრამ Signal Forms signal-ზე დაფუძნებული გზაა.'],
+        file: 'product-form.ts',
+        code: 'model = <span class="k">signal</span>({ name: <span class="s">\'\'</span>, price: <span class="n">0</span> });\nproductForm = <span class="k">form</span>(<span class="k">this</span>.model, (p) =&gt; {\n  <span class="k">required</span>(p.name);\n  <span class="k">min</span>(p.price, <span class="n">0</span>);\n});\n\nsubmit(event: Event) {\n  event.preventDefault();\n  <span class="k">if</span> (<span class="k">this</span>.productForm().invalid()) <span class="k">return</span>;\n  svc.create(<span class="k">this</span>.model()).subscribe();\n}',
+        mistake: ['Submitting an invalid form to the server — always check productForm().invalid() first.',
+                  'არასწორი ფორმის გაგზავნა — ყოველთვის ჯერ შეამოწმე productForm().invalid().']
     },
     paginate: {
         label: ['Pagination', 'პაგინაცია'],
@@ -510,7 +510,7 @@ const NODE_DEFS = {
         long: ['A persistent two-way connection between client and server. The server can push updates the moment something changes — no polling needed.',
                'მუდმივი ორმხრივი კავშირი კლიენტსა და სერვერს შორის. სერვერი მაშინვე უგზავნის განახლებას ცვლილებისას.'],
         file: 'live.service.ts',
-        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> LiveService {\n  socket = <span class="k">new</span> WebSocket(<span class="s">\'wss://api/live\'</span>);\n  products$ = <span class="k">new</span> Subject&lt;Product[]&gt;();\n  <span class="k">constructor</span>() {\n    <span class="k">this</span>.socket.onmessage = e =&gt;\n      <span class="k">this</span>.products$.next(JSON.parse(e.data));\n  }\n}',
+        code: '<span class="k">@Injectable</span>({ providedIn: <span class="s">\'root\'</span> })\n<span class="k">export class</span> LiveService {\n  <span class="k">private readonly</span> socket = <span class="k">new</span> WebSocket(<span class="s">\'wss://api/live\'</span>);\n  <span class="k">readonly</span> products = <span class="k">signal</span>&lt;Product[]&gt;([]);\n\n  <span class="k">constructor</span>() {\n    <span class="k">this</span>.socket.onmessage = e =&gt;\n      <span class="k">this</span>.products.set(JSON.parse(e.data));\n  }\n}',
         mistake: ['Forgetting to close the socket on logout — wastes server resources.',
                   'logout-ისას სოკეტის დახურვის დავიწყება — სერვერის რესურსი იხარჯება ფუჭად.']
     },
@@ -521,40 +521,40 @@ const NODE_DEFS = {
         short: ['Email + password + confirm', 'ელფოსტა + პაროლი + დადასტურება'],
         long: ['A signup form collects credentials for a new user account. It hands the values to an Auth Service which then POSTs them to the API — usually sharing the same service as the login form.',
                'რეგისტრაციის ფორმა ქმნის ახალ მომხმარებელს. იგი გადასცემს მნიშვნელობებს Auth Service-ს, რომელიც POST-ით აგზავნის API-ში — როგორც წესი იგივე სერვისით, რომელსაც login იყენებს.'],
-        file: 'signup.component.ts',
-        code: '<span class="k">onSubmit</span>() {\n  <span class="k">this</span>.auth.signup(<span class="k">this</span>.form.value)\n    .subscribe(t =&gt; <span class="k">this</span>.token.save(t));\n}',
+        file: 'signup.ts',
+        code: '<span class="k">onSubmit</span>(event: Event) {\n  event.preventDefault();\n  <span class="k">this</span>.auth.signup(<span class="k">this</span>.model())\n    .subscribe(t =&gt; <span class="k">this</span>.token.save(t));\n}',
         mistake: ['Creating a separate AuthService just for signup — share one service so login and signup stay in sync.',
                   'ცალკე AuthService-ის შექმნა მხოლოდ რეგისტრაციისთვის — ერთი სერვისი უნდა გამოიყენო ორივესთვის.']
     },
-    lazyModule: {
-        label: ['Lazy Module', 'Lazy მოდული'],
+    lazyRoute: {
+        label: ['Lazy Route', 'Lazy მარშრუტი'],
         category: ['Routing', 'მარშრუტიზაცია'],
         color: 'c-warning',
         short: ['Loaded on demand', 'საჭიროებისას ჩაიტვირთება'],
-        long: ['A feature loaded only when the user navigates to it. Reduces initial bundle size. Use loadComponent for standalone components or loadChildren for routes.',
-               'ფიჩერი, რომელიც იტვირთება მხოლოდ ვიზიტისას. ამცირებს თავდაპირველი bundle-ის ზომას. loadComponent ან loadChildren.'],
+        long: ['A route whose code is loaded only when the user navigates to it. Reduces initial bundle size. Use loadComponent for a single component or loadChildren for a group of routes.',
+               'მარშრუტი, რომლის კოდიც იტვირთება მხოლოდ ვიზიტისას. ამცირებს თავდაპირველი bundle-ის ზომას. loadComponent ერთი კომპონენტისთვის ან loadChildren მარშრუტების ჯგუფისთვის.'],
         file: 'app.routes.ts',
-        code: '{\n  path: <span class="s">\'admin\'</span>,\n  loadComponent: () =&gt;\n    <span class="k">import</span>(<span class="s">\'./admin/admin.component\'</span>)\n      .then(m =&gt; m.AdminComponent)\n}',
-        mistake: ['Eagerly importing rarely-used features into AppModule — bloats the initial download.',
-                  'იშვიათად საჭირო ფიჩერების უპირობოდ ჩატვირთვა AppModule-ში — bundle ხდება დიდი.']
+        code: '{\n  path: <span class="s">\'admin\'</span>,\n  loadComponent: () =&gt;\n    <span class="k">import</span>(<span class="s">\'./admin/admin\'</span>)\n      .then(m =&gt; m.Admin)\n}',
+        mistake: ['Importing rarely-used features eagerly (a static import in your routes) — bloats the initial download. Use loadComponent / loadChildren.',
+                  'იშვიათად საჭირო ფიჩერების უპირობოდ იმპორტი (სტატიკური import მარშრუტებში) — bundle ხდება დიდი. გამოიყენე loadComponent / loadChildren.']
     },
 
     // ----- Sub-blocks (used inside the Dive sub-canvas) -----
-    'sub.constructor': { sub: true, label: ['constructor', 'constructor'], category: ['Internals', 'შინაარსი'], color: '', short: ['Inject dependencies', 'დამოკიდებულებების ინჯექცია'], long: ['Runs once on instantiation. Inject services here; do not put heavy work in the constructor — use ngOnInit.', 'მუშაობს ერთხელ. ინჯექცია აქ; სამუშაო ლოგიკა — ngOnInit-ში.'], file: 'class member', code: '<span class="k">constructor</span>(<span class="k">private</span> http: HttpClient) {}', mistake: ['Calling APIs inside the constructor — use ngOnInit.', 'API-ის გამოძახება constructor-ში — გამოიყენე ngOnInit.'] },
-    'sub.ngOnInit': { sub: true, label: ['ngOnInit', 'ngOnInit'], category: ['Lifecycle', 'სასიცოცხლო ციკლი'], color: 'c-info', short: ['Init lifecycle hook', 'ინიციალიზაცია'], long: ['Called once after Angular has set up inputs. Best place to start API calls and subscriptions.', 'გამოიძახება ერთხელ Input-ების დაყენების შემდეგ. იდეალური ადგილი API-ისთვის.'], file: 'OnInit', code: '<span class="k">ngOnInit</span>() {\n  <span class="k">this</span>.load();\n}', mistake: ['Doing work in the constructor instead — Angular inputs may not be ready yet.', 'სამუშაოს გაკეთება constructor-ში — input-ები მზად შეიძლება არ იყოს.'] },
-    'sub.httpClient': { sub: true, label: ['HttpClient', 'HttpClient'], category: ['Internals', 'შინაარსი'], color: '', short: ['Angular HTTP utility', 'Angular HTTP'], long: ['The underlying HTTP utility your service wraps. It returns Observables of typed responses.', 'HTTP უტილიტა, რომელსაც სერვისი იყენებს. აბრუნებს Observable-ს.'], file: '@angular/common/http', code: '<span class="k">this</span>.http.get&lt;T&gt;(url)', mistake: ['Using fetch() directly — you lose interceptors, retries and the typed pipeline.', 'fetch-ის გამოყენება — დაკარგავ interceptor-ებს.'] },
-    'sub.signal': { sub: true, label: ['Signal', 'Signal'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-success', short: ['Reactive value', 'რეაქტიული მნიშვნელობა'], long: ['A signal is a reactive primitive. Read it as a function; update with .set / .update. Angular tracks reads and re-renders when it changes.', 'Signal არის რეაქტიული პრიმიტივი. წაიკითხე როგორც ფუნქცია; განაახლე .set / .update.'], file: '@angular/core', code: 'products = <span class="k">signal</span>&lt;Product[]&gt;([]);', mistake: ['Treating signal() as a static value — always invoke it.', 'signal()-ის სტატიკურ მნიშვნელობად მოპყრობა.'] },
-    'sub.observable': { sub: true, label: ['Observable', 'Observable'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-info', short: ['rxjs stream', 'rxjs ნაკადი'], long: ['An RxJS Observable. Lazy — does nothing until subscribed. Pipe operators to transform.', 'RxJS Observable. სანამ subscribe არ მოხდება, არაფერი ხდება.'], file: 'rxjs', code: 'products$ = <span class="k">this</span>.http.get&lt;Product[]&gt;(url);', mistake: ['Forgetting to subscribe — nothing happens.', 'subscribe-ის დავიწყება.'] },
+    'sub.inject': { sub: true, label: ['inject()', 'inject()'], category: ['Internals', 'შინაარსი'], color: '', short: ['Inject dependencies', 'დამოკიდებულებების ინჯექცია'], long: ['Pulls a dependency out of Angular\'s injector. Use it in field initializers — it is shorter than constructor parameters and infers the type for you.', 'იღებს დამოკიდებულებას Angular-ის injector-იდან. გამოიყენე ველის ინიციალიზაციაში — constructor-ის პარამეტრებზე მოკლეა და ტიპს თავად ადგენს.'], file: 'class member', code: '<span class="k">private readonly</span> http = <span class="k">inject</span>(HttpClient);', mistake: ['Calling inject() outside an injection context, e.g. inside a click handler — it throws. Call it in a field initializer or the constructor.', 'inject()-ის გამოძახება injection context-ის გარეთ, მაგ. click handler-ში — ის შეცდომას აგდებს. გამოიძახე ველის ინიციალიზაციაში ან constructor-ში.'] },
+    'sub.ngOnInit': { sub: true, label: ['ngOnInit', 'ngOnInit'], category: ['Lifecycle', 'სასიცოცხლო ციკლი'], color: 'c-info', short: ['Init lifecycle hook', 'ინიციალიზაცია'], long: ['Called once after Angular has set up inputs. Still the place for one-off setup that needs inputs — but for loading data, prefer toSignal() or a resource.', 'გამოიძახება ერთხელ Input-ების დაყენების შემდეგ. ერთჯერადი ინიციალიზაციისთვის კვლავ გამოდგება — მაგრამ მონაცემების ჩასატვირთად სჯობს toSignal() ან resource.'], file: 'OnInit', code: '<span class="k">ngOnInit</span>() {\n  <span class="k">this</span>.load();\n}', mistake: ['Fetching here and subscribing by hand when toSignal() or a resource would do.', 'აქ მონაცემების ჩამოტვირთვა და ხელით subscribe, როცა toSignal() ან resource საკმარისია.'] },
+    'sub.httpClient': { sub: true, label: ['HttpClient', 'HttpClient'], category: ['Internals', 'შინაარსი'], color: '', short: ['Angular HTTP utility', 'Angular HTTP'], long: ['The underlying HTTP utility your service wraps. It returns Observables of typed responses and uses the Fetch API by default (no withFetch() needed).', 'HTTP უტილიტა, რომელსაც სერვისი იყენებს. აბრუნებს Observable-ს და ნაგულისხმევად Fetch API-ს იყენებს (withFetch() საჭირო აღარ არის).'], file: '@angular/common/http', code: '<span class="k">this</span>.http.get&lt;T&gt;(url)', mistake: ['Using fetch() directly — you lose interceptors, retries and the typed pipeline.', 'fetch-ის გამოყენება — დაკარგავ interceptor-ებს.'] },
+    'sub.signal': { sub: true, label: ['Signal', 'Signal'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-success', short: ['Reactive value', 'რეაქტიული მნიშვნელობა'], long: ['A signal is a reactive primitive. Read it as a function; update with .set / .update; derive new values with computed(). Angular tracks reads and re-renders when it changes.', 'Signal არის რეაქტიული პრიმიტივი. წაიკითხე როგორც ფუნქცია; განაახლე .set / .update; ახალი მნიშვნელობა მიიღე computed()-ით.'], file: '@angular/core', code: 'products = <span class="k">signal</span>&lt;Product[]&gt;([]);', mistake: ['Treating signal() as a static value — always invoke it.', 'signal()-ის სტატიკურ მნიშვნელობად მოპყრობა.'] },
+    'sub.observable': { sub: true, label: ['Observable', 'Observable'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-info', short: ['rxjs stream', 'rxjs ნაკადი'], long: ['An RxJS Observable. Lazy — does nothing until subscribed. Pipe operators to transform, and use toSignal() to read it in a template.', 'RxJS Observable. სანამ subscribe არ მოხდება, არაფერი ხდება. გარდაქმენი ოპერატორებით, ხოლო HTML-ში წასაკითხად გამოიყენე toSignal().'], file: 'rxjs', code: 'products$ = <span class="k">this</span>.http.get&lt;Product[]&gt;(url);', mistake: ['Forgetting to subscribe — nothing happens.', 'subscribe-ის დავიწყება.'] },
     'sub.subject': { sub: true, label: ['Subject', 'Subject'], category: ['Reactivity', 'რეაქტიულობა'], color: 'c-info', short: ['Multicast emitter', 'მრავალარხიანი emitter'], long: ['A Subject is both an Observable and an Observer. Use it to push values to many subscribers.', 'Subject არის Observable და Observer ერთად. გამოიყენე მრავალი subscriber-ისთვის.'], file: 'rxjs', code: 'changes$ = <span class="k">new</span> Subject&lt;Product&gt;();', mistake: ['Using a plain Subject when a BehaviorSubject is needed for the latest value.', 'Subject-ის გამოყენება BehaviorSubject-ის ნაცვლად.'] },
-    'sub.directive': { sub: true, label: ['Directive', 'დირექტივა'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template attribute', 'შაბლონის ატრიბუტი'], long: ['A directive attaches behavior to an element via an attribute. Structural directives (*ngIf, *ngFor) change DOM; attribute directives change appearance.', 'დირექტივა ანიჭებს ქცევას ელემენტს ატრიბუტით.'], file: 'directive.ts', code: '<span class="k">@Directive</span>({ selector: <span class="s">\'[appHilite]\'</span> })', mistake: ['Putting two structural directives on one element — split into multiple.', 'ორი სტრუქტურული დირექტივა ერთ ელემენტზე.'] },
-    'sub.pipe': { sub: true, label: ['Pipe', 'Pipe'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template transform', 'შაბლონის ტრანსფორმაცია'], long: ['A pipe transforms a value inside a template, e.g. {{ price | currency }}.', 'Pipe ცვლის მნიშვნელობას შაბლონში.'], file: 'pipe.ts', code: '{{ price | <span class="k">currency</span> }}', mistake: ['Doing heavy work in a pure pipe — it runs on every change detection.', 'მძიმე სამუშაო pure pipe-ში.'] },
-    'sub.loader': { sub: true, label: ['Loader / Spinner', 'ჩატვირთვა'], category: ['UX', 'UX'], color: 'c-info', short: ['Show while pending', 'ნახე ჩატვირთვისას'], long: ['A spinner shown while the response is pending. Bind to a loading boolean or use the async pipe with a loading template.', 'ხატულა მონაცემთა მოლოდინში.'], file: 'template', code: '@if (loading()) { &lt;app-spinner /&gt; }', mistake: ['Never hiding the loader on error — UI stays stuck.', 'spinner-ის დატოვება შეცდომისას.'] },
-    'sub.errorState': { sub: true, label: ['Error State', 'შეცდომის მდგომარეობა'], category: ['UX', 'UX'], color: 'c-error', short: ['Render on failure', 'ნახე შეცდომისას'], long: ['Show an error message and a retry button when the request fails. Store the error in a signal or stream.', 'შეცდომის შეტყობინება და retry ღილაკი.'], file: 'template', code: '@if (error()) { &lt;p&gt;{{ error() }}&lt;/p&gt; }', mistake: ['Swallowing the error silently.', 'შეცდომის ჩუმად გადაყლაპვა.'] },
+    'sub.directive': { sub: true, label: ['Directive', 'დირექტივა'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template attribute', 'შაბლონის ატრიბუტი'], long: ['A directive attaches behavior to an element via an attribute. The built-in @if / @for blocks have replaced *ngIf / *ngFor; attribute directives change appearance or behavior.', 'დირექტივა ანიჭებს ქცევას ელემენტს ატრიბუტით. ჩაშენებულმა @if / @for-მა ჩაანაცვლა *ngIf / *ngFor; ატრიბუტული დირექტივები ცვლის იერსახეს ან ქცევას.'], file: 'directive.ts', code: '<span class="k">@Directive</span>({ selector: <span class="s">\'[appHilite]\'</span> })', mistake: ['Writing a custom structural directive when @if / @for already does the job.', 'მორგებული სტრუქტურული დირექტივის წერა, როცა @if / @for უკვე საკმარისია.'] },
+    'sub.pipe': { sub: true, label: ['Pipe', 'Pipe'], category: ['Internals', 'შინაარსი'], color: '', short: ['Template transform', 'შაბლონის ტრანსფორმაცია'], long: ['A pipe transforms a value inside a template, e.g. {{ price | currency }}.', 'Pipe ცვლის მნიშვნელობას შაბლონში.'], file: 'pipe.ts', code: '{{ price | <span class="k">currency</span> }}', mistake: ['Marking a pipe impure (pure: false) for heavy work — it then runs on every change detection.', 'მძიმე სამუშაოს pipe-ზე გადატანა pure: false-ით — ის მაშინ ყოველ ცვლილებაზე სრულდება.'] },
+    'sub.loader': { sub: true, label: ['Loader / Spinner', 'ჩატვირთვა'], category: ['UX', 'UX'], color: 'c-info', short: ['Show while pending', 'ნახე ჩატვირთვისას'], long: ['A spinner shown while the response is pending. Bind it to a resource\'s isLoading() or to a loading signal.', 'ხატულა მონაცემთა მოლოდინში. მიაბი resource-ის isLoading()-ს ან loading სიგნალს.'], file: 'template', code: '@if (products.isLoading()) { &lt;app-spinner /&gt; }', mistake: ['Never hiding the loader on error — UI stays stuck.', 'spinner-ის დატოვება შეცდომისას.'] },
+    'sub.errorState': { sub: true, label: ['Error State', 'შეცდომის მდგომარეობა'], category: ['UX', 'UX'], color: 'c-error', short: ['Render on failure', 'ნახე შეცდომისას'], long: ['Show an error message and a retry button when the request fails. A resource exposes error() and reload() for exactly this.', 'შეცდომის შეტყობინება და retry ღილაკი. resource-ი ამისთვის გაძლევს error()-სა და reload()-ს.'], file: 'template', code: '@if (products.error()) { &lt;p&gt;Could not load&lt;/p&gt; }', mistake: ['Swallowing the error silently.', 'შეცდომის ჩუმად გადაყლაპვა.'] },
     'sub.guardCheck': { sub: true, label: ['canActivate check', 'canActivate-ის შემოწმება'], category: ['Internals', 'შინაარსი'], color: '', short: ['Allow / block route', 'ნება / აკრძალვა'], long: ['Returns true (allow) or a UrlTree (redirect). Reads from the Token Store.', 'აბრუნებს true ან UrlTree-ს.'], file: 'auth.guard.ts', code: '<span class="k">return</span> token ? <span class="k">true</span> : router.parseUrl(<span class="s">\'/login\'</span>);', mistake: ['Returning false with no redirect — user is stuck.', 'false-ის დაბრუნება redirect-ის გარეშე.'] },
     'sub.routeRedirect': { sub: true, label: ['Redirect to /login', 'გადასვლა /login-ზე'], category: ['Internals', 'შინაარსი'], color: 'c-warning', short: ['Send user to login', 'მომხმარებლის გადამისამართება'], long: ['When the guard denies access, return a UrlTree that points at /login to send the user there.', 'როცა guard აკრძალავს, აბრუნე UrlTree /login-ზე.'], file: 'auth.guard.ts', code: '<span class="k">return</span> router.parseUrl(<span class="s">\'/login\'</span>);', mistake: ['Hard-coding window.location — bypasses Angular router.', 'window.location-ის გამოყენება.'] },
-    'sub.formControl': { sub: true, label: ['FormControl', 'FormControl'], category: ['Internals', 'შინაარსი'], color: '', short: ['Single input model', 'ერთი ველის მოდელი'], long: ['Represents a single field with value, validity and dirty state. Combine in a FormGroup.', 'ერთი ველი მნიშვნელობით, ვალიდურობით.'], file: '@angular/forms', code: 'email = <span class="k">new</span> FormControl(<span class="s">\'\'</span>, [Validators.required])', mistake: ['Skipping validators — invalid data sneaks in.', 'ვალიდატორების გამოტოვება.'] },
-    'sub.validator': { sub: true, label: ['Validator', 'ვალიდატორი'], category: ['Internals', 'შინაარსი'], color: 'c-warning', short: ['Block bad input', 'არასწორი მონაცემის ბლოკი'], long: ['Built-in (Validators.required, .email) or custom functions returning null for valid input or an error map otherwise.', 'ჩაშენებული ან მორგებული ვალიდატორი.'], file: '@angular/forms', code: 'Validators.email', mistake: ['Validating only client-side — always validate on the server too.', 'მხოლოდ კლიენტზე ვალიდაცია.'] },
-    'sub.submitHandler': { sub: true, label: ['onSubmit', 'onSubmit'], category: ['Internals', 'შინაარსი'], color: '', short: ['Form submit method', 'submit მეთოდი'], long: ['Reads the form value and hands it off to the service. Disable the button while pending.', 'წაიკითხავს ფორმის მნიშვნელობას და გადასცემს სერვისს.'], file: 'component.ts', code: '<span class="k">onSubmit</span>() { <span class="k">this</span>.auth.login(<span class="k">this</span>.form.value); }', mistake: ['Submitting an invalid form — check form.valid first.', 'არავალიდური ფორმის გაგზავნა.'] },
+    'sub.formField': { sub: true, label: ['Form field', 'ფორმის ველი'], category: ['Internals', 'შინაარსი'], color: '', short: ['Single input model', 'ერთი ველის მოდელი'], long: ['A single field of a Signal Form. loginForm.email binds to an input with [formField] and exposes value(), valid(), touched() and errors() signals.', 'Signal Form-ის ერთი ველი. loginForm.email [formField]-ით უკავშირდება input-ს და გასცემს value(), valid(), touched() და errors() სიგნალებს.'], file: '@angular/forms/signals', code: '&lt;input [formField]=<span class="s">"loginForm.email"</span>&gt;', mistake: ['Skipping validators — invalid data sneaks in.', 'ვალიდატორების გამოტოვება.'] },
+    'sub.validator': { sub: true, label: ['Validator', 'ვალიდატორი'], category: ['Internals', 'შინაარსი'], color: 'c-warning', short: ['Block bad input', 'არასწორი მონაცემის ბლოკი'], long: ['Built-in rules such as required(), email() and minLength() are declared on a field in the form schema. Custom rules use validate().', 'ჩაშენებული წესები (required(), email(), minLength()) form-ის schema-ში ველზე აღიწერება. მორგებულისთვის გამოიყენე validate().'], file: '@angular/forms/signals', code: '<span class="k">email</span>(schemaPath.email);', mistake: ['Validating only client-side — always validate on the server too.', 'მხოლოდ კლიენტზე ვალიდაცია.'] },
+    'sub.submitHandler': { sub: true, label: ['onSubmit', 'onSubmit'], category: ['Internals', 'შინაარსი'], color: '', short: ['Form submit method', 'submit მეთოდი'], long: ['Reads the form value and hands it off to the service. Disable the button while pending.', 'წაიკითხავს ფორმის მნიშვნელობას და გადასცემს სერვისს.'], file: 'component.ts', code: '<span class="k">onSubmit</span>(e: Event) { e.preventDefault(); <span class="k">this</span>.auth.login(<span class="k">this</span>.model()); }', mistake: ['Submitting an invalid form — check loginForm().invalid() first.', 'არავალიდური ფორმის გაგზავნა — ჯერ შეამოწმე loginForm().invalid().'] },
     'sub.routeHandler': { sub: true, label: ['Route handler', 'მისამართის ხელჯოხი'], category: ['Server', 'სერვერი'], color: 'c-info', short: ['Server-side endpoint', 'სერვერის წერტილი'], long: ['The function on the server that responds to a specific HTTP path + method.', 'სერვერის ფუნქცია, რომელიც პასუხობს კონკრეტულ მისამართს.'], file: 'server', code: 'app.get(<span class="s">\'/api/products\'</span>, handler)', mistake: ['Not returning JSON.', 'JSON-ის დაუბრუნებლობა.'] },
     'sub.dbQuery': { sub: true, label: ['DB query', 'DB query'], category: ['Server', 'სერვერი'], color: '', short: ['SELECT / FIND', 'SELECT / FIND'], long: ['The SQL or ORM call that reads or writes the database row(s).', 'SQL ან ORM გამოძახება.'], file: 'server', code: 'db.query(<span class="s">\'SELECT * FROM products\'</span>)', mistake: ['Building SQL by string concatenation — open to injection.', 'SQL-ის სტრინგის შერწყმა — injection-ის რისკი.'] },
     'sub.tokenRead': { sub: true, label: ['Read token', 'ტოკენის წაკითხვა'], category: ['Internals', 'შინაარსი'], color: '', short: ['localStorage.getItem', 'localStorage.getItem'], long: ['Reads the saved auth token. Returns null if absent or expired.', 'წაიკითხავს შენახულ ტოკენს.'], file: 'token-store.ts', code: 'localStorage.getItem(<span class="s">\'token\'</span>)', mistake: ['Reading on every keystroke — cache the value.', 'ყოველ კლავიატურის დარტყმაზე წაკითხვა.'] },
@@ -565,28 +565,28 @@ const NODE_DEFS = {
 // SUB-CANVAS: maps a parent block type to its internal toolset
 // ============================================================
 const SUB_TOOLS = {
-    service:      ['sub.constructor', 'sub.httpClient', 'sub.observable', 'sub.signal', 'sub.errorState'],
-    componentTs:  ['sub.constructor', 'sub.ngOnInit', 'sub.signal', 'sub.observable', 'sub.loader', 'sub.errorState'],
+    service:      ['sub.inject', 'sub.httpClient', 'sub.observable', 'sub.signal', 'sub.errorState'],
+    componentTs:  ['sub.inject', 'sub.ngOnInit', 'sub.signal', 'sub.observable', 'sub.loader', 'sub.errorState'],
     componentHtml:['sub.directive', 'sub.pipe', 'sub.loader', 'sub.errorState'],
-    listTs:       ['sub.constructor', 'sub.ngOnInit', 'sub.signal', 'sub.observable'],
+    listTs:       ['sub.inject', 'sub.ngOnInit', 'sub.signal', 'sub.observable'],
     listHtml:     ['sub.directive', 'sub.pipe'],
-    cardTs:       ['sub.constructor', 'sub.signal'],
+    cardTs:       ['sub.inject', 'sub.signal'],
     cardHtml:     ['sub.directive', 'sub.pipe'],
     appHtml:      ['sub.directive'],
     api:          ['sub.routeHandler', 'sub.validator', 'sub.dbQuery'],
     authGuard:    ['sub.guardCheck', 'sub.tokenRead', 'sub.routeRedirect'],
-    authService:  ['sub.constructor', 'sub.httpClient', 'sub.observable', 'sub.tokenWrite', 'sub.signal'],
-    loginForm:    ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
-    signupForm:   ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
-    reactiveForm: ['sub.formControl', 'sub.validator', 'sub.submitHandler'],
-    searchInput:  ['sub.formControl', 'sub.subject'],
+    authService:  ['sub.inject', 'sub.httpClient', 'sub.observable', 'sub.tokenWrite', 'sub.signal'],
+    loginForm:    ['sub.formField', 'sub.validator', 'sub.submitHandler'],
+    signupForm:   ['sub.formField', 'sub.validator', 'sub.submitHandler'],
+    signalForm: ['sub.formField', 'sub.validator', 'sub.submitHandler'],
+    searchInput:  ['sub.formField', 'sub.subject'],
     interceptor:  ['sub.tokenRead'],
     debounce:     ['sub.subject', 'sub.observable'],
     asyncState:   ['sub.signal', 'sub.loader', 'sub.errorState'],
-    paginate:     ['sub.formControl', 'sub.signal'],
+    paginate:     ['sub.formField', 'sub.signal'],
     webSocket:    ['sub.subject', 'sub.observable'],
     routeParams:  ['sub.observable'],
-    lazyModule:   ['sub.routeHandler'],
+    lazyRoute:   ['sub.routeHandler'],
     tokenStore:   ['sub.tokenRead', 'sub.tokenWrite'],
     router:       ['sub.routeHandler', 'sub.routeRedirect'],
     pipe:         ['sub.pipe'],
@@ -600,12 +600,12 @@ const SUB_TOOLS = {
 
 // Default sub-canvas seed per parent type — a small representative arrangement
 const SUB_SEED = {
-    service:      { nodes: [{type: 'sub.constructor', x: 200, y: 250}, {type: 'sub.httpClient', x: 500, y: 250}, {type: 'sub.observable', x: 800, y: 250}], connections: [[0,1],[1,2]] },
-    componentTs:  { nodes: [{type: 'sub.constructor', x: 200, y: 220}, {type: 'sub.ngOnInit', x: 500, y: 220}, {type: 'sub.signal', x: 800, y: 220}], connections: [[0,1],[1,2]] },
+    service:      { nodes: [{type: 'sub.inject', x: 200, y: 250}, {type: 'sub.httpClient', x: 500, y: 250}, {type: 'sub.observable', x: 800, y: 250}], connections: [[0,1],[1,2]] },
+    componentTs:  { nodes: [{type: 'sub.inject', x: 200, y: 220}, {type: 'sub.ngOnInit', x: 500, y: 220}, {type: 'sub.signal', x: 800, y: 220}], connections: [[0,1],[1,2]] },
     componentHtml:{ nodes: [{type: 'sub.directive', x: 250, y: 250}, {type: 'sub.pipe', x: 550, y: 250}], connections: [[0,1]] },
-    authService:  { nodes: [{type: 'sub.constructor', x: 200, y: 240}, {type: 'sub.httpClient', x: 480, y: 240}, {type: 'sub.tokenWrite', x: 760, y: 240}], connections: [[0,1],[1,2]] },
-    loginForm:    { nodes: [{type: 'sub.formControl', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
-    signupForm:   { nodes: [{type: 'sub.formControl', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
+    authService:  { nodes: [{type: 'sub.inject', x: 200, y: 240}, {type: 'sub.httpClient', x: 480, y: 240}, {type: 'sub.tokenWrite', x: 760, y: 240}], connections: [[0,1],[1,2]] },
+    loginForm:    { nodes: [{type: 'sub.formField', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
+    signupForm:   { nodes: [{type: 'sub.formField', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.submitHandler', x: 800, y: 240}], connections: [[0,1],[1,2]] },
     api:          { nodes: [{type: 'sub.routeHandler', x: 200, y: 240}, {type: 'sub.validator', x: 500, y: 240}, {type: 'sub.dbQuery', x: 800, y: 240}], connections: [[0,1],[1,2]] },
     authGuard:    { nodes: [{type: 'sub.tokenRead', x: 200, y: 240}, {type: 'sub.guardCheck', x: 500, y: 240}, {type: 'sub.routeRedirect', x: 800, y: 240}], connections: [[0,1],[1,2]] }
 };
@@ -618,9 +618,9 @@ const LIBRARY_GROUPS = [
     { title: 'grpHttp',       items: ['get', 'post', 'put', 'delete'] },
     { title: 'grpAngular',    items: ['service', 'componentTs', 'componentHtml', 'pipe', 'interceptor'] },
     { title: 'grpComponents', items: ['listTs', 'listHtml', 'cardTs', 'cardHtml', 'appHtml'] },
-    { title: 'grpForms',      items: ['reactiveForm', 'loginForm', 'signupForm', 'searchInput'] },
+    { title: 'grpForms',      items: ['signalForm', 'loginForm', 'signupForm', 'searchInput'] },
     { title: 'grpAuth',       items: ['authService', 'tokenStore', 'authGuard'] },
-    { title: 'grpRouting',    items: ['router', 'routeParams', 'lazyModule'] },
+    { title: 'grpRouting',    items: ['router', 'routeParams', 'lazyRoute'] },
     { title: 'grpAdvanced',   items: ['debounce', 'asyncState', 'paginate', 'webSocket'] },
     { title: 'grpOutput',     items: ['browser'] }
 ];
@@ -695,8 +695,8 @@ const LEVELS = [
     // ----- Advanced levels -----
     {
         title:   ['Parent-Child Card Pattern', 'მშობელ-შვილი Card-ის შაბლონი'],
-        mission: ['Build a real Angular pattern: fetch products, pass each one to a reusable Card component via @Input, and compose everything inside the App template.',
-                  'ააწყვე რეალური Angular-ის შაბლონი: აიღე პროდუქცია, თითო ერთეული გადააფაცე Card-ის შვილ კომპონენტს @Input-ით, ხოლო ყველაფერი ჩასვი App HTML-ში.'],
+        mission: ['Build a real Angular pattern: fetch products, pass each one to a reusable Card component via a signal input(), and compose everything inside the App template.',
+                  'ააწყვე რეალური Angular-ის შაბლონი: აიღე პროდუქცია, თითო ერთეული გადააფაცე Card-ის შვილ კომპონენტს სიგნალური input()-ით, ხოლო ყველაფერი ჩასვი App HTML-ში.'],
         hint:    ['Database → API → GET → Service → List (.ts) → Card (.ts) → Card (.html) → List (.html) → App (.html) → Browser.',
                   'Database → API → GET → Service → List (.ts) → Card (.ts) → Card (.html) → List (.html) → App (.html) → Browser.'],
         expected: ['database', 'api', 'get', 'service', 'listTs', 'cardTs', 'cardHtml', 'listHtml', 'appHtml', 'browser'],
@@ -746,18 +746,18 @@ const LEVELS = [
                   'Database → API → GET → Service → Async State → Component (.ts) → Component (.html) → Browser. შემდეგ შედი Component (.ts)-ში და დაამატე loader + errorState.'],
         expected: ['database', 'api', 'get', 'service', 'asyncState', 'componentTs', 'componentHtml', 'browser'],
         subSeeds: {
-            componentTs: { nodes: [{type: 'sub.constructor', x: 200, y: 240}, {type: 'sub.ngOnInit', x: 500, y: 240}], connections: [[0,1]] }
+            componentTs: { nodes: [{type: 'sub.inject', x: 200, y: 240}, {type: 'sub.ngOnInit', x: 500, y: 240}], connections: [[0,1]] }
         },
         subRequired: { componentTs: ['sub.loader', 'sub.errorState'] },
         outcome: 'loaded'
     },
     {
-        title:   ['Reactive Form Submit', 'რეაქტიული ფორმის გაგზავნა'],
-        mission: ['Build a validated reactive form for creating a product. Submit it through the service and save it to the database.',
-                  'ააწყვე ვალიდირებული რეაქტიული ფორმა პროდუქტის შესაქმნელად. გააგზავნე სერვისით ბაზაში.'],
-        hint:    ['Reactive Form → Component (.ts) → Service → POST → API → Database.',
-                  'Reactive Form → Component (.ts) → Service → POST → API → Database.'],
-        expected: ['reactiveForm', 'componentTs', 'service', 'post', 'api', 'database'],
+        title:   ['Signal Form Submit', 'Signal ფორმის გაგზავნა'],
+        mission: ['Build a validated Signal Form for creating a product. Submit it through the service and save it to the database.',
+                  'ააწყვე ვალიდირებული Signal ფორმა პროდუქტის შესაქმნელად. გააგზავნე სერვისით ბაზაში.'],
+        hint:    ['Signal Form → Component (.ts) → Service → POST → API → Database.',
+                  'Signal Form → Component (.ts) → Service → POST → API → Database.'],
+        expected: ['signalForm', 'componentTs', 'service', 'post', 'api', 'database'],
         outcome: 'valid'
     },
     {
@@ -779,12 +779,12 @@ const LEVELS = [
         outcome: 'socket'
     },
     {
-        title:   ['Lazy-loaded Feature Module', 'Lazy ჩატვირთვადი მოდული'],
+        title:   ['Lazy-loaded Route', 'Lazy ჩატვირთვადი მარშრუტი'],
         mission: ['The admin area is rarely used. Load it lazily — only when the user navigates there — to keep the initial app small.',
                   'ადმინ პანელი იშვიათად გამოიყენება. ჩატვირთე lazy-ად — მხოლოდ მისი მონახულებისას.'],
-        hint:    ['RouterOutlet → Lazy Module → Component (.ts) → Service → GET → API → Database → Browser.',
-                  'RouterOutlet → Lazy Module → Component (.ts) → Service → GET → API → Database → Browser.'],
-        expected: ['router', 'lazyModule', 'componentTs', 'service', 'get', 'api', 'database', 'browser'],
+        hint:    ['RouterOutlet → Lazy Route → Component (.ts) → Service → GET → API → Database → Browser.',
+                  'RouterOutlet → Lazy Route → Component (.ts) → Service → GET → API → Database → Browser.'],
+        expected: ['router', 'lazyRoute', 'componentTs', 'service', 'get', 'api', 'database', 'browser'],
         outcome: 'lazy'
     },
     {
@@ -977,7 +977,7 @@ function renderLibrary() {
 // Pick a representative icon for sub-blocks — many share semantics with main blocks
 function subIconFor(type) {
     const map = {
-        'sub.constructor': ICONS.service,
+        'sub.inject': ICONS.service,
         'sub.ngOnInit': ICONS.componentTs,
         'sub.httpClient': ICONS.api,
         'sub.signal': ICONS.debounce,
@@ -989,7 +989,7 @@ function subIconFor(type) {
         'sub.errorState': ICONS.warning,
         'sub.guardCheck': ICONS.authGuard,
         'sub.routeRedirect': ICONS.router,
-        'sub.formControl': ICONS.reactiveForm,
+        'sub.formField': ICONS.signalForm,
         'sub.validator': ICONS.check,
         'sub.submitHandler': ICONS.loginForm,
         'sub.routeHandler': ICONS.api,
@@ -1350,6 +1350,8 @@ function renderUIStrings() {
     $('mission-hint').textContent = tt('showHint');
     $('brand-name').textContent = tt('brand');
     $('brand-sub').textContent = tt('academy');
+    $('lbl-readonly').textContent = tt('readonlyHint');
+    $('example-load-editable').textContent = tt('loadEditable');
 }
 
 function renderAll() {
@@ -1507,8 +1509,8 @@ function onNodeMouseDown(e, node) {
         removeNode(node.id);
         return;
     }
-    if (state.readonly) return;
-    if (e.target.classList.contains('port')) {
+    // Read-only (reference schema) locks the structure, but blocks can still be moved
+    if (!state.readonly && e.target.classList.contains('port')) {
         e.stopPropagation();
         startConnectionDrag(node, e.target.dataset.port, e);
         return;
@@ -1532,7 +1534,7 @@ function onNodeMouseDown(e, node) {
     };
     const onUp = () => {
         el.classList.remove('dragging');
-        if (moved && (node.x !== origX || node.y !== origY)) pushUndo();
+        if (!state.readonly && moved && (node.x !== origX || node.y !== origY)) pushUndo();
         document.removeEventListener('mousemove', onMove);
         document.removeEventListener('mouseup', onUp);
     };
@@ -1933,7 +1935,7 @@ const LOG_MSGS = {
     put:         [['<strong>PUT</strong> request issued — sending updated data to the server.', '<strong>PUT</strong> — განახლებული მონაცემი გაგზავნილია.']],
     delete:      [['<strong>DELETE</strong> request issued — asking the server to remove an item.', '<strong>DELETE</strong> — სერვერს ვთხოვთ წაშლას.']],
     service:     [['<strong>Service</strong> received the response and is returning an observable.', '<strong>სერვისმა</strong> მიიღო პასუხი და აბრუნებს Observable-ს.']],
-    componentTs: [['<strong>Component (.ts)</strong> subscribed and stored the data on a property.', '<strong>Component (.ts)</strong> subscribe-ით ინახავს მონაცემს თვისებაში.']],
+    componentTs: [['<strong>Component (.ts)</strong> turned the response into a signal with toSignal().', '<strong>Component (.ts)</strong>-მა toSignal()-ით აქცია პასუხი სიგნალად.']],
     pipe:        [['<strong>Filter / Pipe</strong> kept only the products where inStock is true.', '<strong>Filter</strong>-მ დატოვა მხოლოდ inStock = true.']],
     componentHtml:[['<strong>Component (.html)</strong> looped over the data with @for and produced HTML.', '<strong>Component (.html)</strong> @for-ით გადახედა და დახაზა HTML.']],
     browser:     [['<strong>Browser</strong> rendered the final view — the user sees the products.', '<strong>ბრაუზერმა</strong> დახაზა საბოლოო ხედი — მომხმარებელი ხედავს.']],
@@ -1941,7 +1943,7 @@ const LOG_MSGS = {
     interceptor: [['<strong>Interceptor</strong> attached an Authorization header to the request.', '<strong>Interceptor</strong>-მ მიამატა Authorization ჰედერი.']],
     listTs:      [['<strong>List (.ts)</strong> stored the array on the products property.', '<strong>List (.ts)</strong>-ში მასივი შენახულია.']],
     listHtml:    [['<strong>List (.html)</strong> looped and mounted one Card per item.', '<strong>List (.html)</strong> ხატავს თითო Card-ს.']],
-    cardTs:      [['<strong>Card (.ts)</strong> received one product through @Input.', '<strong>Card (.ts)</strong>-მ მიიღო პროდუქტი @Input-ით.']],
+    cardTs:      [['<strong>Card (.ts)</strong> received one product through a signal input.', '<strong>Card (.ts)</strong>-მ მიიღო პროდუქტი სიგნალური input-ით.']],
     cardHtml:    [['<strong>Card (.html)</strong> rendered name, price and stock badge.', '<strong>Card (.html)</strong>-მ დახაზა სახელი, ფასი და მარაგი.']],
     appHtml:     [['<strong>App (.html)</strong> composed everything inside the root template.', '<strong>App (.html)</strong>-ში ყველაფერი თავმოყრილია.']],
     searchInput: [['<strong>Search Input</strong> emitted the latest query.', '<strong>ძიების ველმა</strong> გასცა მოთხოვნა.']],
@@ -1951,11 +1953,11 @@ const LOG_MSGS = {
     tokenStore:  [['<strong>Token Store</strong> persisted the JWT in localStorage.', '<strong>Token Store</strong>-ში JWT შენახულია.']],
     authGuard:   [['<strong>Auth Guard</strong> verified the token before mounting the route.', '<strong>Auth Guard</strong>-მ შეამოწმა ტოკენი.']],
     asyncState:  [['<strong>Async State</strong> toggled loading off and exposed the result.', '<strong>Async State</strong>-მ გამორთო loading და გასცა შედეგი.']],
-    reactiveForm:[['<strong>Reactive Form</strong> validated values before submit.', '<strong>Reactive Form</strong>-მ ვალიდირება მოახდინა.']],
+    signalForm:[['<strong>Signal Form</strong> validated values before submit.', '<strong>Signal ფორმამ</strong> ვალიდირება მოახდინა.']],
     paginate:    [['<strong>Pagination</strong> requested page 1 with size 4.', '<strong>Pagination</strong>-მა მოითხოვა 1-ლი გვერდი.']],
     webSocket:   [['<strong>WebSocket</strong> pushed a live update to the client.', '<strong>WebSocket</strong>-მა გადასცა რეალურ დროში განახლება.']],
     routeParams: [['<strong>Route Params</strong> read :id from the URL.', '<strong>Route Params</strong>-მა წაიკითხა :id URL-დან.']],
-    lazyModule:  [['<strong>Lazy Module</strong> downloaded the chunk on demand.', '<strong>Lazy Module</strong>-ი ჩატვირთა ჩუნკი მოთხოვნისას.']]
+    lazyRoute:  [['<strong>Lazy Route</strong> downloaded the chunk on demand.', '<strong>Lazy მარშრუტმა</strong> ჩატვირთა ჩუნკი მოთხოვნისას.']]
 };
 
 function logForNode(type, step) {
@@ -2170,6 +2172,8 @@ function loadLevel(idx) {
     renderAll();
 }
 function resetCanvas() {
+    // Clearing a read-only example must not leave an empty, locked canvas behind
+    exitExampleReadonly();
     if (state.canvasStack.length) {
         // Reset just the active sub-canvas
         if (state.nodes.length === 0 && state.connections.length === 0) return;
@@ -2223,7 +2227,7 @@ const EXAMPLES = [
       nodes:[{type:'router',x:120,y:280},{type:'routeParams',x:380,y:280},{type:'componentTs',x:640,y:280},{type:'service',x:900,y:280},{type:'get',x:1160,y:280},{type:'api',x:1420,y:280},{type:'database',x:1680,y:280},{type:'componentHtml',x:1680,y:460},{type:'browser',x:1420,y:460}],
       connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]] },
     { id:'card',      diff:2, title:['List + Card pattern','List + Card'],
-      desc:['Parent fetches, Card renders each item via @Input','მშობელი იღებს, Card ხატავს'],
+      desc:['Parent fetches, Card renders each item via a signal input()','მშობელი იღებს, Card ხატავს'],
       nodes:[{type:'database',x:120,y:300},{type:'api',x:340,y:300},{type:'get',x:560,y:300},{type:'service',x:780,y:300},{type:'listTs',x:1000,y:300},{type:'cardTs',x:1220,y:300},{type:'cardHtml',x:1440,y:300},{type:'listHtml',x:1660,y:300},{type:'appHtml',x:1660,y:480},{type:'browser',x:1440,y:480}],
       connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9]] },
     { id:'search',    diff:3, title:['Search with debounce','ძიება debounce-ით'],
@@ -2250,13 +2254,13 @@ const EXAMPLES = [
       desc:['Auto-attach Authorization token','ავტომატური Authorization'],
       nodes:[{type:'componentTs',x:120,y:300},{type:'service',x:400,y:300},{type:'interceptor',x:680,y:300},{type:'get',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300},{type:'tokenStore',x:680,y:480}],
       connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[6,2]] },
-    { id:'lazy',      diff:4, title:['Lazy-loaded module','Lazy მოდული'],
+    { id:'lazy',      diff:4, title:['Lazy-loaded route','Lazy მარშრუტი'],
       desc:['/admin loads only when visited','/admin ჩატვირთვა მოთხოვნისას'],
-      nodes:[{type:'router',x:120,y:300},{type:'lazyModule',x:380,y:300},{type:'componentTs',x:640,y:300},{type:'service',x:900,y:300},{type:'get',x:1160,y:300},{type:'api',x:1420,y:300},{type:'database',x:1680,y:300},{type:'browser',x:1680,y:480}],
+      nodes:[{type:'router',x:120,y:300},{type:'lazyRoute',x:380,y:300},{type:'componentTs',x:640,y:300},{type:'service',x:900,y:300},{type:'get',x:1160,y:300},{type:'api',x:1420,y:300},{type:'database',x:1680,y:300},{type:'browser',x:1680,y:480}],
       connections:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]] },
-    { id:'reactive',  diff:3, title:['Reactive form submit','რეაქტიული ფორმა'],
-      desc:['Validated reactive form → POST','ვალიდირებული ფორმა'],
-      nodes:[{type:'reactiveForm',x:120,y:300},{type:'componentTs',x:400,y:300},{type:'service',x:680,y:300},{type:'post',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300}],
+    { id:'reactive',  diff:3, title:['Signal Form submit','Signal ფორმა'],
+      desc:['Validated Signal Form → POST','ვალიდირებული ფორმა'],
+      nodes:[{type:'signalForm',x:120,y:300},{type:'componentTs',x:400,y:300},{type:'service',x:680,y:300},{type:'post',x:960,y:300},{type:'api',x:1240,y:300},{type:'database',x:1520,y:300}],
       connections:[[0,1],[1,2],[2,3],[3,4],[4,5]] },
     { id:'loading',   diff:4, title:['Loading / Error UX','Loading / Error'],
       desc:['Spinner + error + retry','სპინერი + შეცდომა'],
@@ -2432,10 +2436,8 @@ $('examples-close').addEventListener('click', () => examplesOverlay.classList.re
 examplesOverlay.addEventListener('click', (e) => {
     if (e.target === examplesOverlay) examplesOverlay.classList.remove('show');
 });
-$('example-load-editable').addEventListener('click', () => {
-    if (_currentExample) loadExample(_currentExample, false);
-    exitExampleReadonly();
-});
+// Unlock in place so any rearranged layout is kept
+$('example-load-editable').addEventListener('click', exitExampleReadonly);
 
 // Zoom buttons
 $('zoom-in').addEventListener('click', () => setZoom(state.zoom + 0.1));

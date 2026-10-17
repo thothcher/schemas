@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Angular Flow Lab is an interactive demo that teaches Angular data flow through drag-and-drop blocks with built-in lesson missions, hints, and flow validation."
+      content="Angular Flow Lab is an interactive demo that teaches modern Angular (v22) data flow through drag-and-drop blocks with built-in lesson missions, hints, and flow validation."
     />
     <meta
       name="keywords"
-      content="Angular, flow lab, drag-and-drop, learning, tutorial, UI, frontend, app architecture, HTTP, routing, components"
+      content="Angular, Angular 22, signals, standalone components, flow lab, drag-and-drop, learning, tutorial, UI, frontend, app architecture, HTTP, routing, components"
     />
     <meta name="author" content="IT Step Academy" />
     <meta name="robots" content="index, follow" />
@@ -140,6 +140,11 @@
 
       <section class="workspace">
         <div class="breadcrumb" id="breadcrumb"></div>
+        <div class="example-readonly-banner" id="example-readonly-banner">
+          <span id="lbl-readonly">Read-only preview — drag blocks to rearrange, or unlock it to edit.</span>
+          <span class="spacer"></span>
+          <button id="example-load-editable">Unlock to edit</button>
+        </div>
         <div class="mission-banner">
           <div class="mission-icon">
             <svg
@@ -229,11 +234,6 @@
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
-        </div>
-        <div class="example-readonly-banner" id="example-readonly-banner">
-          <span id="lbl-readonly">Read-only preview — load it to edit.</span>
-          <span class="spacer"></span>
-          <button id="example-load-editable">Load to canvas (edit)</button>
         </div>
         <div class="examples-body" id="examples-body"></div>
       </div>
